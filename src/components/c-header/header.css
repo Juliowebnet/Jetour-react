@@ -1,0 +1,34 @@
+.c-header{
+    width: 100%;
+    height: 108px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    color: #fff;
+}
+.c-header__logo{
+    width: 283px;
+    height: 26px;
+    margin-left: 50px;
+}
+.c-header__nav{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    margin-right: 70px;
+}
+.c-header__nav__item{
+   text-decoration: none;
+   color: #fff;
+}
+.c-header__nav__item:hover{
+   color: #db8d66;
+}
+.c-header__nav__item.active{
+   color: #db8d66;
+}

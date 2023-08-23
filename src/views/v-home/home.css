@@ -1,0 +1,254 @@
+.v-home{
+    width: 100%;
+}
+.v-home__banner__img{
+    width: 100%;
+    height: 100%;
+}
+.v-home__section__models{
+    width: 100%;
+    height: 800px;
+    background-color: #E5E5E5;
+    padding-top: 60px;
+}
+.v-home__section__model__header{
+    position: absolute;
+    left: 25%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding-top: 60px;
+}
+.v-home__section__model__header_image{
+    width: 450px;
+    height: 35px;
+}
+.v-home__section__model__header__title{
+   font-size: 22px;
+   color: #DD8F67;
+}
+.v-home__section__model__header__button{
+    width: 225px;
+    height: 50px;
+    font-size: 16px;
+    text-decoration: none;
+    color: #333333;
+   border: solid 2px #333333;
+   border-radius: 50px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.v-home__section__model-selected{
+    width: 90%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.v-home__section__model-selected-image{
+    height: 614px;
+}
+.v-home__section__models__options{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.v-home__section__models__option-group{
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.v-home__section__models__option-group p{
+    font-size: 16px;
+    font-weight: bold;
+
+}
+.v-home__section__models__option-image{
+    width: 170px;
+}
+.v-home__section__innovation{
+    width: 100%;
+    height: 500px;
+    background-image: linear-gradient(27deg, #291A1B 0%, #1B1E21 100%);;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 30px 0;
+}
+.v-home__section__innovation__group{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 40px;
+}
+.v-home__section__innovation__title{
+    font-size: 70px;
+    color: #fff;
+}
+.v-home__section__innovation__text{
+    width: 60%;
+    font-size: 16px;
+    color: #fff;
+}
+.v-home__section__innovation__button{
+    width: 300px;
+    height: 50px;
+    font-size: 16px;
+    color: #fff;
+    border: solid 2px #fff;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.v-home__section__innovation__video{
+    width: 685px;
+    height: 385px;
+}
+.v-home__section__features{
+    width: 100%;
+    height: 600px;
+    background-image: linear-gradient(180deg, #26355D 0%, #FFFFFF 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.v-home__section__features__items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+.v-home__section__features__item-a{
+    width: 260px;
+    height: 322px;
+    background-color: gray;
+}
+.v-home__section__features__item-a{
+    width: 260px;
+    height: 322px;
+    background-image: url(../../assets/estabilidad-seguridad.png);
+    background-size: cover;
+}
+.v-home__section__features__item-b{
+    width: 260px;
+    height: 322px;
+    background-image: url(../../assets/fuerza-belleza.png);
+    background-size: cover;
+}
+.v-home__section__features__item-c{
+    width: 260px;
+    height: 322px;
+    background-image: url(../../assets/jetour-destacadas-3.png);
+    background-size: cover;
+}
+.v-home__section__features__item-d{
+    width: 260px;
+    height: 322px;
+    background-image: url(../../assets/innovacion-desarrollo.png);
+    background-size: cover;
+}
+.v-home__section__features__item__text-group{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #0000006c;
+    padding: 10px 0;
+}
+.v-home__section__features__item__text-group p{
+    color: #fff;
+}
+.v-home__section__features__item__text-group h2{
+    color: #fff;
+    text-align: center;
+}
+.v-home__section__features__button{
+    width: 300px;
+    height: 30px;
+    background-color: #26355D;
+    border-radius: 50px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 50px;
+}
+.v-home__section__news{
+    width: 100%;
+    height: 450px;
+    background-color: #EEEEEE;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.v-home__section__news__group{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.v-home__section__news__title{
+    width: 150px;
+   font-size: 80px;
+   font-weight: 900;
+   color: #343434;
+   letter-spacing: 0px;
+   opacity: 1;
+   line-height: 70px;
+}
+.v-home__section__news__button{
+    width: 350px;
+    height: 30px;
+    border: solid 2px #5C5C5C;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 40px;
+}
+.v-home__section__news__slider-buttons-group{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.v-home__section__news__slider-button{
+    width: 60px;
+    height: 60px;
+}
+.v-home__section__news__item{
+    width: 350px;
+    height: 332px;
+   border: solid 2px #5C5C5C;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: flex-start;
+   gap: 8px;
+   padding-left: 60px;
+
+}
+.v-home__section__news__item__title{
+    width: 200px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #343434;
+}
+.v-home__section__news__item__text{
+    font-size: 14px;
+    font-weight: bold;
+    color: #AAAAAA;
+}
+.v-home__section__news__item__image{
+    width: 250px;
+}
