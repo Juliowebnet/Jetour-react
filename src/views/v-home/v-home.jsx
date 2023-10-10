@@ -1,11 +1,13 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
+import { ReactSVG } from 'react-svg';
 
 import './home.css'
 import CHeader from '../../components/c-header/c-header'
 import CFooter from '../../components/c-footer/c-footer'
 
-import Portada from '../../assets/SLIDER PRINCIPAL.jpg'
+// import Portada from '../../assets/SLIDER PRINCIPAL.jpg'
+// import Portada from '../../assets/portada.png'
 import DashingName from '../../assets/model-name0.png'
 import X70Name from '../../assets/model-name1.png'
 import X70PlusName from '../../assets/model-name3.png'
@@ -22,9 +24,11 @@ import X70PlusMiniFront from '../../assets/x70plus-small.png'
 import X90PlusMini from '../../assets/x90plus@2x.png'
 import X90PlusMiniFront from '../../assets/x90plus-small.png'
 import InnovationVideo from '../../assets/videos/INNOVACION.mp4'
-import SliderButtonBack from '../../assets/slider-button-back.png'
-import SliderButtonNext from '../../assets/slider-button-next.png'
+// import SliderButtonBack from '../../assets/slider-button-back.png'
+// import SliderButtonNext from '../../assets/slider-button-next.png'
 import PostImage1 from '../../assets/20220415-JETOUR-DASHENG-PORTADA@2x.png'
+import WhatsAppIcon from '../../assets/whatapp-logo.webp'
+import Logo from '../../assets/logo-white.svg'
 
 export default function VHome() {
     const [dashingHover, setDashingHover] = useState(false);
@@ -62,28 +66,39 @@ export default function VHome() {
         <div className='v-home'>
             <CHeader />
             <div className='v-home__banner-container'>
-                <img src={Portada} alt="Portada" className='v-home__banner__img'/>
+                {/* <img src={Portada} alt="Portada" className='v-home__banner__img'/> */}
+                <div className='v-home__banner__text'>
+                    <div>
+                        <h1 className='c-home__banner__title'>BIENVENIDOS A</h1>
+                    </div>
+                    <div>
+                        <ReactSVG src={Logo} className='c-home__banner__logo' />
+                    </div>
+                    <div>
+                        <h2 className='c-home__banner__subtitle'>REPÚBLICA DOMINICANA</h2>
+                    </div>
+                </div>
             </div>
             <div className='v-home__section__models'>
                 {modelSelected === 'dashing' && <div className='v-home__section__model__header'>
                     <img src={DashingName} alt="" className='v-home__section__model__header_image'/>
                     <h2 className='v-home__section__model__header__title'>EL SUV ELEGANTE Y ESPACIOSO</h2>
-                    <Link to={'/models/dashing'} className='v-home__section__model__header__button'>Más información</Link>
+                    <Link to={'/modelos/dashing'} className='v-home__section__model__header__button'>Más información</Link>
                 </div>}
                 {modelSelected === 'x70' && <div className='v-home__section__model__header'>
                     <img src={X70Name} alt="" className='v-home__section__model__header_image'/>
                     <h2 className='v-home__section__model__header__title'>EL SUV ELEGANTE Y ESPACIOSO</h2>
-                    <div className='v-home__section__model__header__button'>Más información</div>
+                    <Link to={'/modelos/x70'} className='v-home__section__model__header__button'>Más información</Link>
                 </div>}
                 {modelSelected === 'x70-plus' && <div className='v-home__section__model__header'>
                     <img src={X70PlusName} alt="" className='v-home__section__model__header_image'/>
                     <h2 className='v-home__section__model__header__title'>EL SUV ELEGANTE Y ESPACIOSO</h2>
-                    <div className='v-home__section__model__header__button'>Más información</div>
+                    <Link to={'/modelos/x70-plus'} className='v-home__section__model__header__button'>Más información</Link>
                 </div>}
                 {modelSelected === 'x90-plus' && <div className='v-home__section__model__header'>
                     <img src={X90PlusName} alt="" className='v-home__section__model__header_image'/>
                     <h2 className='v-home__section__model__header__title'>EL SUV ELEGANTE Y ESPACIOSO</h2>
-                    <div className='v-home__section__model__header__button'>Más información</div>
+                    <Link to={'/modelos/x90-plus'} className='v-home__section__model__header__button'>Más información</Link>
                 </div>}
                 <div className='v-home__section__model-selected'>
                     {modelSelected === 'dashing' && <img src={Dashing} alt="" className='v-home__section__model-selected-image'/>}
@@ -114,7 +129,7 @@ export default function VHome() {
                 <div className='v-home__section__innovation__group'>
                     <h2 className='v-home__section__innovation__title'>INNOVACIÓN</h2>
                     <p className='v-home__section__innovation__text'>Impulsado por la innovación y con la búsqueda de la excelencia, Chery Holding está decidido a ser un líder en cada uno de sus campos y convertirse en una marca influyente y confiable del grupo.</p>
-                    <div className='v-home__section__innovation__button'>Conoce más sobre nosotros</div>
+                    <Link to={'/post-venta'} className='v-home__section__innovation__button'>Conoce más sobre nosotros</Link>
                 </div>
                 <div className='v-home__section__innovation__group'>
                     <video src={InnovationVideo} className='v-home__section__innovation__video' controls></video>
@@ -122,51 +137,61 @@ export default function VHome() {
             </div>
             <div className='v-home__section__features'>
                 <div className='v-home__section__features__items'>
-                    <div className='v-home__section__features__item-a'>
+                    <Link to={'/modelos/x70'} className='v-home__section__features__item-a'>
                         <div className='v-home__section__features__item__text-group'>
                             <p>X70</p>
                             <h2>ESTABILIDAD y SEGURIDAD</h2>
                         </div>
-                    </div>
+                    </Link>
                     <div className='v-home__section__features__item-b'>
-                        <div className='v-home__section__features__item__text-group'>
-                            <p>X90</p>
+                        <Link to={'/modelos/x90-plus'} className='v-home__section__features__item__text-group'>
+                            <p>X90 PLUS</p>
                             <h2>FUERZA y BELLEZA</h2>
-                        </div>
+                        </Link>
                     </div>
                     <div className='v-home__section__features__item-c'>
-                        <div className='v-home__section__features__item__text-group'>
+                        <Link to={'/modelos/dashing'} className='v-home__section__features__item__text-group'>
                             <p>DASHING</p>
                             <h2>DISEÑO y CONFORT</h2>
-                        </div>
+                        </Link>
                     </div>
                     <div className='v-home__section__features__item-d'>
-                        <div className='v-home__section__features__item__text-group'>
+                        <Link to={'/modelos/x70-plus'} className='v-home__section__features__item__text-group'>
                             <p>X70 PLUS</p>
                             <h2>INNOVACIÓN y DESARROLLO</h2>
-                        </div>
+                        </Link>
                     </div>
                 </div>
-                <div className='v-home__section__features__button'>Conoce más sobre nuestros modelos</div>
+                <Link to={'/modelos/dashing'} className='v-home__section__features__button'>Conoce más sobre nuestros modelos</Link>
             </div>
             <div className='v-home__section__news'>
-                <div className='v-home__section__news__group'>
+                <div className='v-home__section__news__group__left'>
                     <h2 className='v-home__section__news__title'>
-                        NOVE DADES
+                        NOVEDADES
                     </h2>
-                    <div className='v-home__section__news__button'>Ver todas las novedades de Jetour Dominicana</div>
-                    <div className='v-home__section__news__slider-buttons-group'>
+                    <Link to={'/novedades'} className='v-home__section__news__button'>Ver todas las novedades de Jetour Dominicana</Link>
+                    {/* <div className='v-home__section__news__slider-buttons-group'>
                         <img src={SliderButtonBack} alt="" className='v-home__section__news__slider-button'/>
                         <img src={SliderButtonNext} alt="" className='v-home__section__news__slider-button'/>
-                    </div>
+                    </div> */}
                 </div>
-                <div className='v-home__section__news__group'>
-                    <div className='v-home__section__news__item'>
+                <div className='v-home__section__news__group__right'>
+                    <Link to={'/novedades'} className='v-home__section__news__item'>
                         <p className='v-home__section__news__item__title'>EL X90 PLUS: UN CLÁSICO MUY COMPLETO</p>
                         <p className='v-home__section__news__item__text'>07.01.23</p>
                         <img src={PostImage1} alt="" className='v-home__section__news__item__image'/>
-                    </div>
+                    </Link>
+                    <Link to={'/novedades'} className='v-home__section__news__item'>
+                        <p className='v-home__section__news__item__title'>EL X90 PLUS: UN CLÁSICO MUY COMPLETO</p>
+                        <p className='v-home__section__news__item__text'>07.01.23</p>
+                        <img src={PostImage1} alt="" className='v-home__section__news__item__image'/>
+                    </Link>
                 </div>
+            </div>
+            <div className='v-home__section-whatsapp'>
+                <a href="https://api.whatsapp.com/send/?phone=18098899087" className='v-home__whatsapp-icon__container'>
+                    <img src={WhatsAppIcon} className='v-home__whatsapp-icon' alt="whatsapp" />
+                </a>
             </div>
             <CFooter />
         </div>

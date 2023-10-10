@@ -1,0 +1,198 @@
+{
+    "slider1": [
+        {
+            "id": 0,
+            "imgPath": "../../Images/dashing-interior1.jpg"
+        },
+        {
+            "id": 1,
+            "imgPath": "../../Images/dashing-interior2.jpg"
+        },
+        {
+            "id": 2,
+            "imgPath": "../../Images/dashing-interior3.jpg"
+        },
+        {
+            "id": 3,
+            "imgPath": "../../Images/dashing-interior4.jpg"
+        },
+        {
+            "id": 4,
+            "imgPath": "../../Images/dashing-interior5.jpg"
+        },
+        {
+            "id": 5,
+            "imgPath": "../../Images/dashing-interior6.jpg"
+        }
+    ],
+    "slider2": [
+        {
+            "id": 0,
+            "imgPath": "../../Images/dashing-exterior1.jpg"
+        },
+        {
+            "id": 1,
+            "imgPath": "../../Images/dashing-exterior2.jpg"
+        },
+        {
+            "id": 2,
+            "imgPath": "../../Images/dashing-exterior3.jpg"
+        },
+        {
+            "id": 3,
+            "imgPath": "../../Images/dashing-exterior4.jpg"
+        },
+        {
+            "id": 4,
+            "imgPath": "../../Images/dashing-exterior5.jpg"
+        },
+        {
+            "id": 5,
+            "imgPath": "../../Images/dashing-exterior6.jpg"
+        }
+    ],
+    "techConfig": [
+        {
+            "id": 1,
+            "category": "Visión general",
+            "info": [
+                {
+                    "id": 0,
+                    "title": "Categoría",
+                    "description": "SUV"
+                },
+                {
+                    "id": 1,
+                    "title": "Etiqueta del producto",
+                    "description": "1.5T-6MT"
+                },
+                {
+                    "id": 2,
+                    "title": "Nombre del modelo",
+                    "description": "DASHING"
+                }
+            ]
+
+        },
+        {
+            "id": 2,
+            "category": "Parámetro básico",
+            "info": [
+                {
+                    "id": 0,
+                    "title": "Largo*ancho*alto (mm)",
+                    "description": "4590*1900*1685"
+                },
+                {
+                    "id": 1,
+                    "title": "Distancia entre ejes (mm)",
+                    "description": "2720"
+                },
+                {
+                    "id": 2,
+                    "title": "Distancia mínima al suelo (mm)",
+                    "description": "160"
+                },
+                {
+                    "id": 3,
+                    "title": "Número de asientos",
+                    "description": "5"
+                },
+                {
+                    "id": 4,
+                    "title": "Capacidad del tanque de combustible (L)",
+                    "description": "57"
+                },
+                {
+                    "id": 5,
+                    "title": "Capacidad del maletero (L)",
+                    "description": "486/977 (Asientos traseros abatidos)"
+                },
+                {
+                    "id": 6,
+                    "title": "Color del vehículo",
+                    "description": "Negro/Blanco/Azul/Gris Oscuro/Gris Claro/Verde"
+                },
+                {
+                    "id": 7,
+                    "title": "Color interior",
+                    "description": "Blanco/ Rojo"
+                }
+            ]
+
+        },
+        {
+            "id": 3,
+            "category": "Parámetro de rendimiento",
+            "info": [
+                {
+                    "id": 0,
+                    "title": "Tipo de motor",
+                    "description": "Kunpeng 1.5TCI"
+                },
+                {
+                    "id": 1,
+                    "title": "Desplazamiento (ml)",
+                    "description": "1498"
+                },
+                {
+                    "id": 2,
+                    "title": "Potencia Máxima (kW@RPM)",
+                    "description": "115@5500"
+                },
+                {
+                    "id": 3,
+                    "title": "Par Máximo (N·m@RPM)",
+                    "description": "230@1750-4000"
+                },
+                {
+                    "id": 4,
+                    "title": "Etiqueta de combustible",
+                    "description": "92#"
+                },
+                {
+                    "id": 5,
+                    "title": "Estándar de emisión",
+                    "description": "China Ⅵ B"
+                },
+                {
+                    "id": 6,
+                    "title": "Transmisión",
+                    "description": "6MT"
+                },
+                {
+                    "id": 7,
+                    "title": "Color interior",
+                    "description": "Blanco/ Rojo"
+                },
+                {
+                    "id": 8,
+                    "title": "Modo conductor",
+                    "description": "FF"
+                },
+                {
+                    "id": 9,
+                    "title": "Tipo de suspensión",
+                    "description": "Suspensión independiente Macpherson/Suspensión independiente de enlace múltiple"
+                },
+                {
+                    "id": 10,
+                    "title": "Tipo de energía",
+                    "description": "EPS"
+                },
+                {
+                    "id": 11,
+                    "title": "Tipo de freno",
+                    "description": "Tipo de disco ventilado delantero/tipo de disco sólido trasero"
+                },
+                {
+                    "id": 12,
+                    "title": "Tipo de freno de estacionamiento",
+                    "description": "EPB+RETENCIÓN AUTOMÁTICA"
+                }
+            ]
+
+        }
+       
+    ]
+}

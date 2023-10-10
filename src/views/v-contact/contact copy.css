@@ -1,0 +1,262 @@
+.v-contact__banner{
+    width: 100%;
+}
+.v-contact__content{
+    width: 100%;
+    background-color: #1E2B4F;
+    padding-top: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+.v-contact__section-left{
+    width: 35%;
+}
+.v-contact__section-left__title-container{
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.v-contact__section-left__title{
+    font-size: 60px;
+    color: #fff;
+}
+.v-contact__section-left__info-group{
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    padding: 30px 0;
+}
+.v-contact__section-left__logo{
+    width: 300px;
+    margin-top: 120px;
+}
+.v-contact__section-left__logo-text{
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    color: #26355D;
+}
+.v-contact__section-left__contact-info-group{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0;
+}
+.v-contact__section-left__contact-info-group__text{
+    width: 300px;
+    text-align: center;
+    margin: 5px 0;
+}
+.v-contact__section-left__contact-info-group__rrss{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin: 10px 0;
+}
+.v-contact__section-left__contact-info-group__rrss__icon{
+    width: 40px;
+    height: 40px;
+}
+.v-contact__section-left__contact-info-group__text-bold{
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    color: #26355D;
+    margin-bottom: 10px;
+}
+.v-contact__section-left__contact-info-group__button{
+    width: 350px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 2px #26355D;
+    border-radius: 50px;
+    text-decoration: none;
+    color: #26355D;
+    font-size: 22px;
+}
+.v-contact__section-right{
+    width: 65%;
+}
+.v-contact__section-right__form-container{
+    height: 100%;
+    background-color: #EEEEEE;
+}
+.v-contact__section-right__form-subcontainer{
+    padding: 60px;
+
+}
+.v-contact__section-right__title{
+    font-size: 60px;
+}
+.v-contact__section-right__text{
+    font-size: 22px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+.v-contact__section-right__form{
+    width: 800px;
+}
+.v-contact__section-right__form__input-group{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin: 20px 0;
+}
+.v-contact__section-right__form__input{
+    width: 100%;
+    height: 60px;
+    font-size: 22px;
+    color: #908D8D;
+    border: none;
+    border-bottom: solid 2px #707070;
+    outline: none;
+    background: none;
+}
+.v-contact__section-right__form__half-input{
+    width: 50%;
+    height: 60px;
+    font-size: 22px;
+    color: #908D8D;
+    border: none;
+    border-bottom: solid 2px #707070;
+    outline: none;
+    background: none;
+}
+.v-contact__section-right__form__input-block{
+    width: 100%;
+    height: 120px;
+    font-size: 22px;
+    color: #908D8D;
+    border: none;
+    border-bottom: solid 2px #707070;
+    outline: none;
+    background: none;
+}
+.v-contact__section-right__form__separator{
+    width: 100%;
+    height: 1px;
+    background-color: #707070;
+    margin: 60px 0;
+}
+.v-contact__section-right__form__button{
+    width: 100%;
+    height: 50px;
+    background-color: #26355D;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 22px;
+    margin-top: 15px;
+}
+
+@media (max-width: 1200px) {
+    .v-contact__content{
+        padding-top: 100px;
+    }
+    .v-contact__section-left__title-container{
+        height: 200px;
+    }
+    .v-contact__section-left__title{
+        font-size: 40px;
+    }
+    .v-contact__section-left__info-group{
+        height: 870px;
+    }
+    .v-contact__section-left__contact-info-group__button{
+        width: 250px;
+        font-size: 18px;
+    }
+    .v-contact__section-right__title{
+        font-size: 40px;
+    }
+    .v-contact__section-right__text{
+        font-size: 18px;
+        margin-top: 10px;
+    }   
+    .v-contact__section-right__form{
+        width: auto;
+    }
+    .v-contact__section-right__form__input-group{
+        flex-wrap: wrap;
+    }
+    .v-contact__section-right__form__half-input{
+        width: 100%;
+    }
+}
+@media (max-width: 900px) {
+    .v-contact__content{
+        width: 100%;
+        background-color: #1E2B4F;
+        padding-top: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+    .v-contact__section-left{
+        width: 100%;
+    }
+    .v-contact__section-left__title{
+        font-size: 40px;
+    }
+    .v-contact__section-left__title-container{
+        height: 100px;
+    }
+    .v-contact__section-left__info-group{
+        height: 450px;
+    }
+    .v-contact__section-left__logo-group{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .v-contact__section-left__logo{
+        width: 200px;
+        margin-top: 20px;
+    }
+    .v-contact__section-left__logo-text{
+        font-size: 22px;
+    }
+    .v-contact__section-left__contact-info-group__button{
+        width: 250px;
+        font-size: 18px;
+    }
+    .v-contact__section-right{
+        width: 100%;
+    }
+    .v-contact__section-right__form-container{
+        width: 100%;
+    }
+    .v-contact__section-right__form-subcontainer{
+        padding: 40px;
+    }
+    .v-contact__section-right__title{
+        font-size: 40px;
+    }
+    .v-contact__section-right__text{
+        font-size: 18px;
+        margin-top: 10px;
+    }    
+    .v-contact__section-right__form{
+        width: 100%;
+    }
+    .v-contact__section-right__form__input-group{
+        flex-wrap: wrap;
+    }
+    .v-contact__section-right__form__half-input{
+        width: 100%;
+    }
+}

@@ -1,10 +1,8 @@
-.v-dashing__banner__video{
+.v-dashing__banner{
     width: 100%;
-    height: 100%;
 }
 .v-dashing__banner__image{
-    width: 100%;
-    height: 100%;
+    display: none;
 }
 .v-dashing__content-nav{
     width: 100%;
@@ -50,6 +48,9 @@
     color: #fff;
     padding: 5px 10px;
     margin-right: 40px;
+}
+.v-dashing__model-nav__button__black{
+    display: none;
 }
 .v-dashing__section__overview{
     width: 100%;
@@ -169,4 +170,390 @@
 }
 .v-dashing__section__overview__image-container img{
     height: 900px;
+}
+.v-dashing__section__design{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    margin: 40px 0;
+}
+.v-dashing__section__design__info-container{
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.v-dashing__section__design__text-group{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.v-dashing__section__design__text{
+    text-align: center;
+}
+.v-dashing__section__design__title{
+    text-align: center;
+    font-size: 32px;
+}
+.v-dashing__section__design__group-a{
+    width: 360px;
+    height: 417px;
+    background-image: url(../../../assets/design1.png);
+    background-size: cover;
+    background-position: left;
+}
+.v-dashing__section__design__group-b{
+    width: 360px;
+    height: 417px;
+    background-image: url(../../../assets/design2.png);
+    background-size: cover;
+    background-position: left;
+}
+.v-dashing__section__design__group-c{
+    width: 360px;
+    height: 417px;
+    background-image: url(../../../assets/design3.png);
+    background-size: cover;
+    background-position: left;
+}
+.v-dashing__section__design__group-d{
+    width: 360px;
+    height: 417px;
+    background-image: url(../../../assets/DISFRUTA_LA_VIDA_1.png);
+    background-size: cover;
+    background-position: left;
+}
+.v-dashing__section__design__group-e{
+    width: 360px;
+    height: 417px;
+    background-image: url(../../../assets/DISFRUTA_LA_VIDA_2.png);
+    background-size: cover;
+    background-position: left;
+}
+.v-dashing__section__design__group-f{
+    width: 360px;
+    height: 417px;
+    background-image: url(../../../assets/DISFRUTA_LA_VIDA_3.png);
+    background-size: cover;
+    background-position: left;
+}
+.v-dashing__section-security{
+    width: 100%;
+    height: 600px;
+    background-image: url(../../../assets/security-background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.v-dashing__section-security__content-group{
+    width: 100%;
+    height: 100%;
+    background-color: #333333d9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px
+}
+.v-dashing__section-security__content-group__title{
+   color: #fff;
+   font-size: 32px;
+}
+.v-dashing__section-security__content-group__items{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px
+}
+.v-dashing__section-security__content-group__item{
+    width: 260px;
+}
+.v-dashing__section-security__content-group__item__image{
+    width: 100%;
+    height: 323px;
+}
+.v-dashing__section-security__content-group__item__text{
+    color: #fff;
+    text-align: center;
+    padding: 0 30px;
+    margin-top: 20px;
+}
+
+@media (min-width: 1930px) {
+    .v-dashing__banner__video{
+        display: none;
+    }
+    .v-dashing__banner__image{
+        width: 100%;
+        display: block;
+    }
+}
+@media (max-width: 1900px) {
+    .v-dashing__banner__video{
+        display: none;
+    }
+    .v-dashing__banner__image{
+        width: 100%;
+        display: block;
+    }
+}
+@media (max-width: 1700px) {
+    .v-dashing__section__overview__image-container{
+        width: 1230px;
+        overflow: hidden;
+        position: absolute;
+        left: 130px;
+        margin-top: 230px;
+    }
+    .v-dashing__section__overview__image-container img{
+        height: 800px;
+    }
+}
+@media (max-width: 1200px) {
+    .v-dashing__section__overview__image-container{
+        width: 930px;
+        overflow: hidden;
+        position: absolute;
+        left: 130px;
+        margin-top: 230px;
+    }
+    .v-dashing__section__overview__image-container img{
+        height: 600px;
+    }
+    .v-dashing__section-security{
+        height: auto;
+    }
+    .v-dashing__section-security__content-group{
+        padding: 30px 0;
+    }
+    .v-dashing__section-security__content-group__items{
+        flex-wrap: wrap;
+    }
+}
+@media (max-width: 900px) {
+    .v-dashing__model-nav__actions{
+        display: none;
+    }
+    .v-dashing__section__overview{
+        width: 100%;
+        height: 800px;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        padding-top: 0px;
+    }
+    .v-dashing__model-nav__button__black{
+        width: 200px;
+        height: 30px;
+        border: solid 2px #fff;
+        border-radius: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        color: #fff;
+        padding: 10px 20px;
+        margin: 20px 0;
+    }
+    .v-dashing__section__overview__info-container{
+        width: 90%;
+        height: 60%;
+        position: absolute;
+        margin-top: 140px;
+    }
+    .v-dashing__section__overview__detail-title{
+        font-size: 18px;
+        color: #fff;
+    }
+    .v-dashing__section__overview__detail{
+        font-size: 50px;
+        color: #fff;
+    }
+    .text-black{
+        color: #333333;
+    }
+    .v-dashing__section__overview__3d-button{
+        width: 200px;
+        height: 30px;
+        text-decoration: none;
+        color: #fff;
+        border: solid 2px #fff;
+        border-radius: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 9999;
+        padding: 10px 20px;
+        margin-top: 100px;
+    }
+    .v-dashing__section__overview__colors{
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .v-dashing__section__overview__color{
+        width: 30px;
+        height: 30px;
+        border: solid 2px #707070;
+        cursor: pointer;
+    }
+    .v-dashing__section__overview__background{
+        width: 100%;
+        height: 100%;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .v-dashing__section__overview__background__title-group{
+        padding-top: 20px;
+        display: flex;
+        align-items: center;
+    }
+    .v-dashing__section__overview__image-container{
+        width: 630px;
+        position: absolute;
+        left: 40px;
+        overflow: hidden;
+        margin-top: 160px;
+    }
+    .v-dashing__section__overview__image-container img{
+        height: 400px;
+    }
+    .v-dashing__section__design__info-container{
+        width: 200px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .v-dashing__section__design__group-a, .v-dashing__section__design__group-b, .v-dashing__section__design__group-c, .v-dashing__section__design__group-d, .v-dashing__section__design__group-e, .v-dashing__section__design__group-f{
+        width: 200px;
+        height: 247px;
+    }
+    .v-dashing__section__design__text{
+        text-align: center;
+    }
+    .v-dashing__section__design__title{
+        text-align: center;
+        font-size: 24px;
+    }
+}
+@media (max-width: 600px) {
+    .v-dashing__section__overview{
+        width: 100%;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        padding-top: 0px;
+    }
+    .v-dashing__section__overview__info-container{
+        width: 90%;
+        height: 60%;
+        position: absolute;
+        margin-top: 140px;
+    }
+    .v-dashing__section__overview__detail-title{
+        font-size: 18px;
+        color: #fff;
+    }
+    .v-dashing__section__overview__detail{
+        font-size: 50px;
+        color: #fff;
+    }
+    .text-black{
+        color: #333333;
+    }
+    .v-dashing__section__overview__3d-button{
+        width: 200px;
+        height: 30px;
+        text-decoration: none;
+        color: #fff;
+        border: solid 2px #fff;
+        border-radius: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 9999;
+        padding: 10px 20px;
+        margin-top: 200px;
+    }
+    .v-dashing__section__overview__colors{
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .v-dashing__section__overview__color{
+        width: 30px;
+        height: 30px;
+        border: solid 2px #707070;
+        cursor: pointer;
+    }
+    .v-dashing__section__overview__background{
+        width: 100%;
+        height: 100%;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .v-dashing__section__overview__background__title-group{
+        padding-top: 20px;
+        display: flex;
+        align-items: center;
+    }
+    .v-dashing__section__overview__image-container{
+        width: 530px;
+        position: absolute;
+        left: -140px;
+        overflow: hidden;
+        margin-top: 260px;
+    }
+    .v-dashing__section__overview__image-container img{
+        height: 400px;
+    }
+    .v-dashing__section__design{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .no-show-mobile{
+        display: none;
+    }
+    .v-dashing__section-security{
+        width: 100%;
+        height: auto;
+        background-color: #333333d9;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .v-dashing__section-security__content-group{
+        width: 100%;
+        height: 100%;
+        background-color: #333333d9;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        padding: 30px 0;
+    }
+    .v-dashing__section-security__content-group__items{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px
+    }
+    .v-dashing__section-slider{
+        width: 100%;
+        height: auto;
+    }
 }

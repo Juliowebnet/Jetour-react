@@ -1,11 +1,14 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
+import ReactPlayer from 'react-player'
 
 import './dashing.css'
+import data from '../../../data/dashing.json'
 import CHeader from '../../../components/c-header/c-header'
 import CFooter from '../../../components/c-footer/c-footer'
+import CSlider from '../../../components/c-slider/c-slider'
+import CAccordion from '../../../components/c-accordion/c-accordion'
 
-// import DashingVideo from '../../../assets/videos/VIDEO-DASHING.mp4'
 import Banner from '../../../assets/dashing1.jpg'
 import LogoDashing from '../../../assets/dashing-1.png'
 import DashingBlack from '../../../assets/dashing-black.png'
@@ -13,6 +16,12 @@ import DashingGray from '../../../assets/dashing-gray.png'
 import DashingRed from '../../../assets/dashing-red.png'
 import DashingBlue from '../../../assets/dashing-blue.png'
 import DashingWhite from '../../../assets/dashing-white.png'
+import Security1 from '../../../assets/security-1.png'
+import Security2 from '../../../assets/security-2.png'
+import Security3 from '../../../assets/security-3.png'
+import Security4 from '../../../assets/security-4.png'
+
+import DashingVideo from '../../../assets/videos/dashing.mp4'
 
 export default function VDashing() {
     const [color, setColor] = useState('black')
@@ -20,38 +29,55 @@ export default function VDashing() {
         <div className='v-dashing'>
             <CHeader />
             <div className='v-dashing__banner'>
-                 {/* <video src={DashingVideo} className='' autoplay></video> */}
                  <img src={Banner} alt="" className='v-dashing__banner__image'/>
+                 <ReactPlayer url={DashingVideo} width='100%' height='1080px' loop playing muted className='v-dashing__banner__video'/>
             </div>
             <div className='v-dashing__content-nav'>
                 <img src={LogoDashing} alt="" className='v-dashing__model-nav__logo'/>
                 <div className='v-dashing__model-nav__actions'>
                     <div className='v-dashing__model-nav__nav-items'>
                         <a href="#overview"  className='v-dashing__model-nav__nav-item'>Visión general</a>
-                        <a href="#overview"  className='v-dashing__model-nav__nav-item'>Detalles</a>
-                        <a href="#overview"  className='v-dashing__model-nav__nav-item'>Galerías</a>
-                        <a href="#overview"  className='v-dashing__model-nav__nav-item'>Configuración</a>
+                        <a href="#details"  className='v-dashing__model-nav__nav-item'>Detalles</a>
+                        <a href="#gallery"  className='v-dashing__model-nav__nav-item'>Galerías</a>
+                        <a href="#config"  className='v-dashing__model-nav__nav-item'>Configuración</a>
                     </div>
-                    <Link to={'/'} className='v-dashing__model-nav__button'>Cotizar ahora</Link>
+                    <Link to={'/cotizar/dashing'} className='v-dashing__model-nav__button'>Cotizar ahora</Link>
                 </div>
             </div>
             <div className='v-dashing__section__overview' id='overview'>
                 <div className='v-dashing__section__overview__info-container'>
-                    <div className='v-dashing__section__overview__details-container'>
+                    {color !== 'white' && <div className='v-dashing__section__overview__details-container'>
                         <div className='v-dashing__section__overview__details-group'>
-                            <p className='v-dashing__section__overview__detail-title'>Cilindrada (ml)</p>
-                            <h2 className='v-dashing__section__overview__detail'>1598</h2>
+                            <p className='v-dashing__section__overview__detail-title '>Potencia (HP)</p>
+                            <h2 className='v-dashing__section__overview__detail '>200</h2>
                         </div>
                         <div className='v-dashing__section__overview__details-group'>
-                            <p className='v-dashing__section__overview__detail-title'>Potencia máxima (ps)</p>
-                            <h2 className='v-dashing__section__overview__detail'>197</h2>
+                            <p className='v-dashing__section__overview__detail-title '>Motor</p>
+                            <h2 className='v-dashing__section__overview__detail '>1.6T</h2>
                         </div>
                         <div className='v-dashing__section__overview__details-group'>
-                            <p className='v-dashing__section__overview__detail-title'>Par máximo (N.m)</p>
-                            <h2 className='v-dashing__section__overview__detail'>290</h2>
+                            <p className='v-dashing__section__overview__detail-title '>Cámara</p>
+                            <h2 className='v-dashing__section__overview__detail '>540</h2>
                         </div>
                         <a href="https://platanogeek.com/dashing_720/" className='v-dashing__section__overview__3d-button'>Visualizador 3D</a>
-                    </div>
+                        <Link to={'/cotizar/dashing'} className='v-dashing__model-nav__button__black'>Cotizar ahora</Link>
+                    </div>}
+                    {color === 'white' && <div className='v-dashing__section__overview__details-container'>
+                        <div className='v-dashing__section__overview__details-group'>
+                            <p className='v-dashing__section__overview__detail-title text-black '>Potencia (HP)</p>
+                            <h2 className='v-dashing__section__overview__detail text-black '>200</h2>
+                        </div>
+                        <div className='v-dashing__section__overview__details-group'>
+                            <p className='v-dashing__section__overview__detail-title text-black '>Motor</p>
+                            <h2 className='v-dashing__section__overview__detail text-black '>1.6T</h2>
+                        </div>
+                        <div className='v-dashing__section__overview__details-group'>
+                            <p className='v-dashing__section__overview__detail-title text-black '>Cámara</p>
+                            <h2 className='v-dashing__section__overview__detail text-black '>540</h2>
+                        </div>
+                        <a href="https://platanogeek.com/dashing_720/" className='v-dashing__section__overview__3d-button'>Visualizador 3D</a>
+                        <Link to={'/cotizar/dashing'} className='v-dashing__model-nav__button__black'>Cotizar ahora</Link>
+                    </div>}
                     <div className='v-dashing__section__overview__colors'>
                         <div className='v-dashing__section__overview__color v-dashing__section__overview__color-black' onClick={()=>{setColor('black')}}></div>
                         <div className='v-dashing__section__overview__color v-dashing__section__overview__color-gray' onClick={()=>{setColor('gray')}}></div>
@@ -86,8 +112,8 @@ export default function VDashing() {
                 </div>}
                 { color === 'white' && <div className='v-dashing__section__overview__background v-dashing__section__overview__background-white'>
                     <div className='v-dashing__section__overview__background__title-group'>
-                        <h2 className='v-dashing__section__overview__background__title'>DASHING</h2>
-                        <p className='v-dashing__section__overview__background__text'>Blanco</p>
+                        <h2 className='v-dashing__section__overview__background__title text-black'>DASHING</h2>
+                        <p className='v-dashing__section__overview__background__text text-black'>Blanco</p>
                     </div>
                 </div>}
                 {color === 'black' &&
@@ -115,6 +141,80 @@ export default function VDashing() {
                         <img src={DashingWhite} alt="" className='v-dashing__section__overview__image'/>
                     </div>
                 }
+            </div>
+            <div className='v-dashing__section__design' id="details">
+                <div className='v-dashing__section__design__info-container no-show-mobile'>
+                    <div className='v-dashing__section__design__group-a'></div>
+                    <div className='v-dashing__section__design__text-group'>
+                        <p className='v-dashing__section__design__text'>El asiento y la posición de conducción perfecta se traducen a través de un asiento de diseño deportivo</p>
+                    </div>
+                </div>
+                <div className='v-dashing__section__design__info-container'>
+                    <div className='v-dashing__section__design__text-group'>
+                        <h2 className='v-dashing__section__design__title'>DISEÑO EXTERIOR E INTERIOR LLAMATIVO</h2>
+                        <p className='v-dashing__section__design__text'>El Jetour Dashing tiene un aspecto nítido traducido en su estilo aerodinámico y apariencia contemporánea.</p>
+                    </div>
+                    <div className='v-dashing__section__design__group-b'></div>
+                </div>
+                <div className='v-dashing__section__design__info-container no-show-mobile'>
+                    <div className='v-dashing__section__design__group-c'></div>
+                    <div className='v-dashing__section__design__text-group'>
+                        <p className='v-dashing__section__design__text'>El Detour Dashing tiene un aspecto nítido traducido en su estilo aerodinámico y apariencia contemporánea.</p>
+                    </div>
+                </div>
+            </div>
+            <div className='v-dashing__section-security'>
+                <div className='v-dashing__section-security__content-group'>
+                    <h2 className='v-dashing__section-security__content-group__title'>SEGURIDAD</h2>
+                    <div className='v-dashing__section-security__content-group__items'>
+                        <div className='v-dashing__section-security__content-group__item'>
+                            <img src={Security1} alt="" className='v-dashing__section-security__content-group__item__image'/>
+                            <p className='v-dashing__section-security__content-group__item__text'>540° panoramic parking assist system</p>
+                        </div>
+                        <div className='v-dashing__section-security__content-group__item'>
+                            <img src={Security2} alt="" className='v-dashing__section-security__content-group__item__image'/>
+                            <p className='v-dashing__section-security__content-group__item__text'>LDWS (Lane Departure Warning System)</p>
+                        </div>
+                        <div className='v-dashing__section-security__content-group__item'>
+                            <img src={Security3} alt="" className='v-dashing__section-security__content-group__item__image'/>
+                            <p className='v-dashing__section-security__content-group__item__text'>Automatic emergency braking system</p>
+                        </div>
+                        <div className='v-dashing__section-security__content-group__item'>
+                            <img src={Security4} alt="" className='v-dashing__section-security__content-group__item__image'/>
+                            <p className='v-dashing__section-security__content-group__item__text'>RCTA (Rear Side Collision Alert)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className='v-dashing__section-slider' id="gallery">
+                <CSlider title="GALERÍA INTERIOR" data={data.slider1}/>
+            </div>
+            <div className='v-dashing__section__design'>
+                <div className='v-dashing__section__design__info-container no-show-mobile'>
+                    <div className='v-dashing__section__design__group-d'></div>
+                    <div className='v-dashing__section__design__text-group'>
+                        <p className='v-dashing__section__design__text'>El Detour Dashing tiene un aspecto nítido traducido en su estilo aerodinámico y apariencia contemporánea.</p>
+                    </div>
+                </div>
+                <div className='v-dashing__section__design__info-container'>
+                    <div className='v-dashing__section__design__text-group'>
+                        <h2 className='v-dashing__section__design__title'>DISFRUTA LA VIDA, DISFRUTA VIAJAR</h2>
+                        <p className='v-dashing__section__design__text'>El Jetour Dashing tiene un aspecto nítido traducido en su estilo aerodinámico y apariencia contemporánea.</p>
+                    </div>
+                    <div className='v-dashing__section__design__group-e'></div>
+                </div>
+                <div className='v-dashing__section__design__info-container no-show-mobile'>
+                    <div className='v-dashing__section__design__group-f'></div>
+                    <div className='v-dashing__section__design__text-group'>
+                        <p className='v-dashing__section__design__text'>Para hacer las cosas espectaculares, un techo panorámico completo le da al interior del Dashing una sensación de ligereza y amplitud.</p>
+                    </div>
+                </div>
+            </div>
+            <div className='v-dashing__section-slider'>
+                <CSlider title="GALERÍA EXTERIOR" data={data.slider2}/>
+            </div>
+            <div className='v-dashing__section-accordion' id="config">
+                <CAccordion data={data.techConfig} title="TABLA DE CONFIGURACIÓN"/>
             </div>
             <CFooter />
         </div>

@@ -11,10 +11,14 @@ export default function CFooter() {
             <div className='c-footer'>
                 <img src={Logo} alt="" className='c-footer__logo'/>
                 <div className='c-footer__rrss-group'>
-                    <img src={IconInstagram} alt="" className='c-footer__rrss-image'/>
-                    <img src={IconFacebook} alt="" className='c-footer__rrss-image'/>
+                    <a href="https://www.instagram.com/holajetour/">
+                        <img src={IconInstagram} alt="" className='c-footer__rrss-image'/>
+                    </a>
+                    <a href="https://web.facebook.com/profile.php?id=100092172548080">
+                        <img src={IconFacebook} alt="" className='c-footer__rrss-image'/>
+                    </a>
+                    <img src={LogoMoviti} alt="" className='c-footer__logo-moviti'/>
                 </div>
-                <img src={LogoMoviti} alt="" className='c-footer__logo-moviti'/>
             </div>
         </div>
     )

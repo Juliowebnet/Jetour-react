@@ -1,0 +1,224 @@
+{
+    "slider1": [
+        {
+            "id": 0,
+            "imgPath": "../../Images/x70-interior1.jpg"
+        },
+        {
+            "id": 1,
+            "imgPath": "../../Images/x70-interior2.jpg"
+        },
+        {
+            "id": 2,
+            "imgPath": "../../Images/x70-interior3.jpg"
+        },
+        {
+            "id": 3,
+            "imgPath": "../../Images/x70-interior4.jpg"
+        },
+        {
+            "id": 4,
+            "imgPath": "../../Images/x70-interior5.jpg"
+        },
+        {
+            "id": 5,
+            "imgPath": "../../Images/x70-interior6.jpg"
+        }
+    ],
+    "slider2": [
+        {
+            "id": 0,
+            "imgPath": "../../Images/x70-exterior1.jpg"
+        },
+        {
+            "id": 1,
+            "imgPath": "../../Images/x70-exterior2.jpg"
+        },
+        {
+            "id": 2,
+            "imgPath": "../../Images/x70-exterior3.jpg"
+        },
+        {
+            "id": 3,
+            "imgPath": "../../Images/x70-exterior4.jpg"
+        }
+    ],
+    "techConfig": [
+        {
+            "id": 1,
+            "category": "Visión general",
+            "info": [
+                {
+                    "id": 0,
+                    "title": "Categoría",
+                    "description": "SUV"
+                },
+                {
+                    "id": 1,
+                    "title": "Etiqueta del producto",
+                    "description": "1.5T+5MT/1.5T+8AT"
+                },
+                {
+                    "id": 2,
+                    "title": "Nombre del modelo",
+                    "description": "X70"
+                }
+            ]
+
+        },
+        {
+            "id": 2,
+            "category": "Parámetro básico",
+            "info": [
+                {
+                    "id": 0,
+                    "title": "Largo*ancho*alto (mm)",
+                    "description": "4720*1900*1695 (1710)"
+                },
+                {
+                    "id": 1,
+                    "title": "Banda de rodadura delantera (mm)",
+                    "description": "1605"
+                },
+                {
+                    "id": 2,
+                    "title": "Banda de rodadura trasera (mm)",
+                    "description": "1603"
+                },
+                {
+                    "id": 3,
+                    "title": "Distancia mínima al suelo (mm)",
+                    "description": "210"
+                },
+                {
+                    "id": 4,
+                    "title": "Peso en vacío (kg)",
+                    "description": "1545 (5 asientos)/1560 asientos"
+                },
+                {
+                    "id": 5,
+                    "title": "Estructura del cuerpo",
+                    "description": "SUV (5 puertas y 5-7 asientos)"
+                },
+                {
+                    "id": 6,
+                    "title": "Número de asientos",
+                    "description": "5/6/5+2"
+                },
+                {
+                    "id": 7,
+                    "title": "Capacidad del tanque de combustible (L)",
+                    "description": "55"
+                },
+                {
+                    "id": 8,
+                    "title": "Capacidad del maletero (L)",
+                    "description": "1260"
+                }
+            ]
+
+        },
+        {
+            "id": 3,
+            "category": "Motor",
+            "info": [
+                {
+                    "id": 0,
+                    "title": "Tipo de motor",
+                    "description": "SQRE4T15B"
+                },
+                {
+                    "id": 1,
+                    "title": "Cilindrada (ml)",
+                    "description": "1498"
+                },
+                {
+                    "id": 2,
+                    "title": "Potencia máxima (Ps)",
+                    "description": "156.4"
+                },
+                {
+                    "id": 3,
+                    "title": "Poder maximo (kW)/Velocidad máxima de potencia (RPM)",
+                    "description": "108/5500"
+                },
+                {
+                    "id": 4,
+                    "title": "Tecnología específica del motor",
+                    "description": "Turboalimentación, colector de escape integrado, refrigeración integrada，DVVT"
+                },
+                {
+                    "id": 5,
+                    "title": "Estándar de emisión",
+                    "description": "China V"
+                },
+                {
+                    "id": 6,
+                    "title": "Tipo de transmisión",
+                    "description": "5MT"
+                },
+                {
+                    "id": 7,
+                    "title": "Velocidad máxima (km/h)",
+                    "description": "185"
+                },
+                {
+                    "id": 8,
+                    "title": "El anuncio de consumo de combustible (L/100km)",
+                    "description": "7.4"
+                }
+            ]
+
+        },
+        {
+            "id": 4,
+            "category": "Dirección del chasis",
+            "info": [
+                {
+                    "id": 0,
+                    "title": "Modo conductor",
+                    "description": "FF"
+                },
+                {
+                    "id": 1,
+                    "title": "Tipo de suspensión delantera/Tipo de suspensión trasera",
+                    "description": "Suspensión independiente multibrazo con barra estabilizadora"
+                },
+                {
+                    "id": 2,
+                    "title": "Tipo de dirección",
+                    "description": "HPS"
+                }
+            ]
+
+        },
+        {
+            "id": 5,
+            "category": "Freno de rueda",
+            "info": [
+                {
+                    "id": 0,
+                    "title": "Tipo de freno delantero/Tipo de freno trasero",
+                    "description": "Freno de disco/Freno de disco"
+                },
+                {
+                    "id": 1,
+                    "title": "Tipo de freno de estacionamiento",
+                    "description": "Conveniente sistema de freno de estacionamiento electrónico EPB"
+                },
+                {
+                    "id": 2,
+                    "title": "Especificación de neumáticos delanteros/traseros",
+                    "description": "R17"
+                },
+                {
+                    "id": 3,
+                    "title": "Especificaciones del neumático de repuesto",
+                    "description": "Tamaño no completo"
+                }
+            ]
+
+        }
+       
+    ]
+}

@@ -1,9 +1,29 @@
 .v-home{
     width: 100%;
 }
-.v-home__banner__img{
+.v-home__banner-container{
     width: 100%;
-    height: 100%;
+    height: 100vh;
+    background-image: url(../../assets/SLIDER-PRINCIPAL.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.c-home__banner__title{
+    font-size: 25px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+.c-home__banner__logo{
+    width: 500px;
+}
+.c-home__banner__subtitle{
+    font-size: 25px;
+    color: #fff;
+    text-align: right;
+    margin-top: 10px;
 }
 .v-home__section__models{
     width: 100%;
@@ -20,8 +40,7 @@
     padding-top: 60px;
 }
 .v-home__section__model__header_image{
-    width: 450px;
-    height: 35px;
+    height: 25px;
 }
 .v-home__section__model__header__title{
    font-size: 22px;
@@ -71,7 +90,7 @@
 .v-home__section__innovation{
     width: 100%;
     height: 500px;
-    background-image: linear-gradient(27deg, #291A1B 0%, #1B1E21 100%);;
+    background: transparent linear-gradient(300deg, #1B1E21 5%, #0F191D 24%, #291A1B 53%, #121014 64%, #191113 77%, #070708 100%) 0% 0% no-repeat padding-box;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -99,6 +118,7 @@
     height: 50px;
     font-size: 16px;
     color: #fff;
+    text-decoration: none;
     border: solid 2px #fff;
     border-radius: 50px;
     display: flex;
@@ -106,8 +126,8 @@
     align-items: center;
 }
 .v-home__section__innovation__video{
-    width: 685px;
-    height: 385px;
+    width: 785px;
+    height: 485px;
 }
 .v-home__section__features{
     width: 100%;
@@ -179,6 +199,7 @@
     color: #fff;
     font-size: 16px;
     font-weight: 500;
+    text-decoration: none;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -191,12 +212,19 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    gap: 60px;
 }
-.v-home__section__news__group{
-    width: 40%;
+.v-home__section__news__group__left{
+    width: 20%;
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 20px;
+}
+.v-home__section__news__group__right{
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 .v-home__section__news__title{
     width: 150px;
@@ -215,6 +243,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    text-decoration: none;
     padding: 10px 40px;
 }
 .v-home__section__news__slider-buttons-group{
@@ -225,10 +254,12 @@
 .v-home__section__news__slider-button{
     width: 60px;
     height: 60px;
+    cursor: pointer;
 }
 .v-home__section__news__item{
     width: 350px;
     height: 332px;
+    text-decoration: none;
    border: solid 2px #5C5C5C;
    display: flex;
    flex-direction: column;
@@ -252,3 +283,383 @@
 .v-home__section__news__item__image{
     width: 250px;
 }
+.v-home__section-whatsapp{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: sticky;
+    right: 0px;
+    bottom: 30px;
+}
+.v-home__whatsapp-icon__container{
+    width: 60px;
+    height: 60px;
+}
+.v-home__whatsapp-icon{
+    width: 60px;
+    height: 60px;
+}
+
+@media (max-width: 1500px) {
+    .v-home__section__news__group__right{
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 1400px) {
+    .v-home__section__models{
+        width: 100%;
+        height: 700px;
+        background-color: #E5E5E5;
+        padding-top: 60px;
+    }
+    .v-home__section__model__header{
+        position: absolute;
+        left: 10%;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        padding-top: 60px;
+    }
+    .v-home__section__model-selected-image{
+        height: 514px;
+    }
+    .v-home__section__models__option-image{
+        width: 170px;
+    }
+    .v-home__section__innovation{
+        width: 100%;
+        height: 500px;
+        background: transparent linear-gradient(300deg, #1B1E21 5%, #0F191D 24%, #291A1B 53%, #121014 64%, #191113 77%, #070708 100%) 0% 0% no-repeat padding-box;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        padding: 30px 0;
+    }
+    .v-home__section__innovation__group{
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 40px;
+    }
+    .v-home__section__innovation__title{
+        font-size: 70px;
+        color: #fff;
+    }
+    .v-home__section__innovation__text{
+        width: 60%;
+        font-size: 16px;
+        color: #fff;
+    }
+    .v-home__section__innovation__button{
+        width: 300px;
+        height: 50px;
+        font-size: 16px;
+        color: #fff;
+        border: solid 2px #fff;
+        border-radius: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .v-home__section__innovation__video{
+        width: 585px;
+        height: auto;
+    }
+}
+@media (max-width: 1200px) {
+    .v-home__section__models{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 30px;
+    }
+    .v-home__section__model__header{
+        position: static;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        padding-top: 10px;
+    }
+    .v-home__section__model__header_image{
+        width: 430px;
+        height: auto;
+    }
+    .v-home__section__model-selected-image{
+        height: 414px;
+    }
+    .v-home__section__innovation__title{
+        font-size: 50px;
+        color: #fff;
+    }
+    .v-home__section__innovation__text{
+        width: 60%;
+        font-size: 14px;
+        color: #fff;
+    }
+    .v-home__section__innovation__button{
+        width: 250px;
+        height: 40px;
+        font-size: 14px;
+        color: #fff;
+        border: solid 2px #fff;
+        border-radius: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .v-home__section__innovation__video{
+        width: 520px;
+        height: auto;
+    }
+    .v-home__section__features{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        padding: 30px 0 ;
+    }
+    .v-home__section__features__items{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 16px;
+        padding: 30px 0;
+    }
+    .v-home__section__news{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        padding: 30px 0;
+    }
+    .v-home__section__news__group__left{
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 0 20px;
+    }
+    .v-home__section__news__group__right{
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 0 20px;
+    }
+    .v-home__section__news__title{
+        width: 150px;
+       font-size: 50px;
+       line-height: 50px;
+    }
+    .v-home__section__news__button{
+        width: 300px;
+        height: 20px;
+        font-size: 0.8rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 15px;
+    }
+    .v-home__section__news__slider-buttons-group{
+        display: flex;
+        align-items: center;
+        gap: 16px;
+    }
+    .v-home__section__news__slider-button{
+        width: 40px;
+        height: 40px;
+    }
+    .v-home__section__news__item{
+        width: 260px;
+        height: 332px;
+       border: solid 2px #5C5C5C;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: flex-start;
+       gap: 8px;
+       padding-left: 60px;
+    
+    }
+    .v-home__section__news__item__title{
+        width: 200px;
+        font-size: 22px;
+        font-weight: bold;
+        color: #343434;
+    }
+    .v-home__section__news__item__text{
+        font-size: 14px;
+        font-weight: bold;
+        color: #AAAAAA;
+    }
+    .v-home__section__news__item__image{
+        width: 250px;
+    }
+}
+
+@media (max-width: 900px) {
+    .v-home__section__models{
+        height: 450px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 30px;
+    }
+    .v-home__section__model__header{
+        position: static;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        padding-top: 10px;
+    }
+    .v-home__section__model__header_image{
+        width: 330px;
+        height: auto;
+    }
+    .v-home__section__model__header__title{
+       font-size: 18px;
+    }
+    .v-home__section__model__header__button{
+        width: 185px;
+        height: 40px;
+    }
+    .v-home__section__model-selected{
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .v-home__section__model-selected-image{
+        height: 214px;
+    }
+    .v-home__section__models__option-group p{
+        font-size: 12px;
+    }
+    .v-home__section__models__option-image{
+        width: 90px;
+    }
+   .v-home__section__innovation{
+        height: 500px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        padding: 10px 0;
+    }
+    .v-home__section__innovation__group{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    .v-home__section__innovation__title{
+        font-size: 40px;
+        color: #fff;
+    }
+    .v-home__section__innovation__text{
+        width: 60%;
+        font-size: 14px;
+        color: #fff;
+        text-align: center;
+    }
+    .v-home__section__innovation__button{
+        width: 250px;
+        height: 40px;
+        font-size: 14px;
+        color: #fff;
+        border: solid 2px #fff;
+        border-radius: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .v-home__section__innovation__video{
+        width: 385px;
+        height: auto;
+    }
+    .v-home__section__features{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        padding: 30px 0 ;
+    }
+    .v-home__section__features__items{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 16px;
+        padding: 30px 0;
+    }
+    .v-home__section__features__item__text-group{
+        width: 100%;
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        background-color: #0000006c;
+        padding: 10px 0;
+    }
+    .v-home__section__features__item__text-group p{
+        font-size: 0.9rem;
+    }
+    .v-home__section__features__item__text-group h2{
+        font-size: 1.3rem;
+    }
+    .v-home__section__features__button{
+        width: 250px;
+        height: 30px;
+        font-size: 14px;
+        font-weight: 500;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 50px;
+    }
+  }
+  @media (max-width: 600px) {
+    .c-home__banner__logo{
+        width: 300px;
+    }
+    .c-home__banner__subtitle{
+        font-size: 18px;
+    }
+    .v-home__section__features__item-a{
+        width: 160px;
+        height: 222px;
+    }
+    .v-home__section__features__item-b{
+        width: 160px;
+        height: 222px;
+    }
+    .v-home__section__features__item-c{
+        width: 160px;
+        height: 222px;
+    }
+    .v-home__section__features__item-d{
+        width: 160px;
+        height: 222px;
+    }
+  }
