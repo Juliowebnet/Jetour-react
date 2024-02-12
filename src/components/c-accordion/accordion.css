@@ -13,8 +13,8 @@
     margin-top: 50px;
 }
 .c-accordion__main-title{
-    font-size: 32px;
-    font-weight: bold;
+    font-family: jetourFont600;
+    font-size: 40px;
     text-align: left;
 }
 .c-accordion__container{
@@ -72,6 +72,9 @@
     font-size: 18px;
 }
 @media (max-width: 900px) {
+    .c-accordion__main-title{
+        font-size: 23px;
+    }
     .c-accordion__detail{
         gap: 20px;
     }

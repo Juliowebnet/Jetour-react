@@ -38,6 +38,7 @@ export default function CHeader() {
                             <NavLink to={'/modelos/x70'} className='c-header__nav__item'>X70</NavLink>
                             <NavLink to={'/modelos/x70-plus'} className='c-header__nav__item'>X70 Plus</NavLink>
                             <NavLink to={'/modelos/x90-plus'} className='c-header__nav__item'>X90 Plus</NavLink>
+                            <NavLink to={'/modelos/t2'} className='c-header__nav__item'>T2</NavLink>
                         </div>}
                     </div>
                     <NavLink to={'/concesionarios'} className='c-header__nav__item'>Concesionarios</NavLink>
@@ -55,6 +56,7 @@ export default function CHeader() {
                             <NavLink to={'/modelos/x70'} className='c-header__nav__item'>X70</NavLink>
                             <NavLink to={'/modelos/x70-plus'} className='c-header__nav__item'>X70 Plus</NavLink>
                             <NavLink to={'/modelos/x90-plus'} className='c-header__nav__item'>X90 Plus</NavLink>
+                            <NavLink to={'/modelos/t2'} className='c-header__nav__item'>T2</NavLink>
                         </div>}
                     </div>
                     <NavLink to={'/concesionarios'} className='c-header__nav__item'>Concesionarios</NavLink>

@@ -4,8 +4,9 @@ import CFooter from '../../components/c-footer/c-footer'
 import CNewsCard from '../../components/c-news-card/c-news-card'
 
 import Banner from '../../assets/jetour-novedades-hero-1366.webp'
-import PostImage1 from '../../assets/20220415-JETOUR-DASHENG-PORTADA@2x.png'
-import PostImage2 from '../../assets/post2.png'
+// import PostImage1 from '../../assets/article-05.webp'
+import PostImage2 from '../../assets/article-03.jpg'
+import PostImage3 from '../../assets/article-02.jpg'
 
 export default function VNews() {
     return(
@@ -16,8 +17,11 @@ export default function VNews() {
                 <h2 className='v-news__title'>NOVEDADES SOBRE JETOUR</h2>
                 <p className='v-news__subtitle'>Todo lo que tienes que saber sobre nuestra marca y vehículos</p>
                 <div className='v-news__posts'>
-                    <CNewsCard image={PostImage1} title="JETOUR ANUNCIA 2 LANZAMIENTOS PARA EL AÑO 2023" text='La marca líder china, hija dilecta de Chery, prepara dos lanzamientos para año 2023' date='07.01.23'/>
-                    <CNewsCard image={PostImage2} title="JETOUR ANUNCIA 2 LANZAMIENTOS PARA EL AÑO 2023" text='La marca líder china, hija dilecta de Chery, prepara dos lanzamientos para año 2023' date='07.01.23'/>
+                    <CNewsCard image={process.env.PUBLIC_URL + "/Images/dashing-exterior5.jpg"} title="LIDOM y Grupo Martí firman alianza" text='La Liga de Béisbol Profesional de República Dominicana (LIDOM) y el Grupo Martí, a través de su marca Letour, firmaron una alianza de patrocinio de cara a la premiación MVP de la Semana del campeonato de béisbol invernal 2023-2024' date='17.10.23' url='/novedades/lidom-grupo-marti-firma-alianza'/>
+                    <CNewsCard image={process.env.PUBLIC_URL + "/Images/x70PLus-exterior2.jpg"} title="La nueva propuesta del Grupo Martí" text='Su nueva marca de vehículos livianos' date='10.07.23' url='/novedades/nueva-propuesta-grupo-marti'/>
+                    <CNewsCard image={PostImage2} title="Grupo Martí presentan marca de vehículos" text='El grupo empresarial Martí introdujo a su portafolio de vehículos livianos una nueva marca' date='07.07.23' url='/novedades/grupo-marti-presentan-marca-vehiculo'/>
+                    <CNewsCard image={PostImage3} title="Presentan Jetour" text='Una marca de vehículos que se encuentra entre los tres grupos automotrices más importantes de China' date='06.07.23' url='/novedades/la-novedad-grupo-marti'/>
+                    <CNewsCard image={process.env.PUBLIC_URL + "/Images/x90PLus-exterior4.jpg"} title="MARTÍ presenta a Jetour" text='Los vehículos de Jetour son comercializados con mantenimiento preventivo básico incluido y cinco años o 150,000 kilómetros de garantía' date='05.07.23' url='/novedades/marti-presenta-jetour'/>
                 </div>
             </div>
             <CFooter />

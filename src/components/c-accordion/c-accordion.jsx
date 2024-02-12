@@ -9,9 +9,9 @@ export default function CAccordion (props) {
             <div className='c-accordion__container__main-title'>
                 <h2 className='c-accordion__main-title'>{props.title}</h2>
             </div>
-            {props.data.map((item)=>{
+            {props.data.map((item, i)=>{
                return  (
-                    <div className='c-accordion__container'>
+                    <div className='c-accordion__container' key={i}>
                         <div className='c-accordion__title-group' onClick={()=> {showDetails === item.id ? setShowDetails(0) : setShowDetails(item.id)}}>
                             <p className='c-accordion__title'>{item.category}</p>
                             {showDetails === item.id ? <div className='c-accordion__arrow-icon-selected'></div> : <div className='c-accordion__arrow-icon'></div>}

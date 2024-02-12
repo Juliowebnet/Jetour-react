@@ -5,25 +5,24 @@ import './after-sales.css'
 import CHeader from '../../components/c-header/c-header'
 import CFooter from '../../components/c-footer/c-footer'
 
-import Banner from '../../assets/jetour-postventa-hero-1920.webp'
 import Service1 from '../../assets/pdi-icon.svg'
 import Service2 from '../../assets/colisiones-icon.svg'
 import Service3 from '../../assets/preventivo-icon.svg'
 import Service4 from '../../assets/correctivo-icon.svg'
-import LogoWhite from '../../assets/logo-white.svg'
+// import LogoWhite from '../../assets/logo-white.svg'
 import LogoBlack from '../../assets/logo-black.svg'
-import WhatsAppIcon from '../../assets/whatapp-logo.webp'
+import WhatsAppIcon from '../../assets/whatsapp-icon.svg'
 
 export default function VAfterSales() {
     return(
         <div>
             <CHeader />
             <div className='v-after-sales__section-banner'>
-                <img src={Banner} alt="" className='v-after-sales__banner-image'/>
+                <div className='v-after-sales__section-banner-mask'></div>
             </div>
             <div className='v-after-sales__section-services'>
                 <h2 className='v-after-sales__section-services__title'>SERVICIO DE POSTVENTA</h2>
-                <p className='v-after-sales__section-services__subtitle'>SEGURIDAD Y CALIDAD</p>
+                {/* <p className='v-after-sales__section-services__subtitle'>SEGURIDAD Y CALIDAD</p> */}
                 <div className='v-after-sales__section-services__items'>
                     <div className='v-after-sales__section-services__item'>
                         <ReactSVG src={Service1} className='v-after-sales__section-services__item__image'/>
@@ -72,12 +71,12 @@ export default function VAfterSales() {
             </div>
             <div className='v-after-sales__section-benefits'>
                 <h2 className='v-after-sales__section-benefits__title'>DISFRUTA</h2>
-                <ReactSVG src={LogoBlack} className='v-after-sales__section-call-center__logo'/>
-                <div className='v-after-sales__section-benefits__subtitles'>
+                <ReactSVG src={LogoBlack} className='v-after-sales__section-benefits__logo'/>
+                {/* <div className='v-after-sales__section-benefits__subtitles'>
                     <p className='v-after-sales__section-benefits__subtitle'>- Repuestos originales</p>
                     <p className='v-after-sales__section-benefits__subtitle'>- Cotizaciones sin cargo</p>
                     <p className='v-after-sales__section-benefits__subtitle'>- Precios competitivos</p>
-                </div>
+                </div> */}
                 <div className='v-after-sales__section-benefits__cards'>
                     <div className='v-after-sales__section-benefits__details'>
                         <div className='v-after-sales__section-benefits__details__text-group'>
@@ -106,14 +105,15 @@ export default function VAfterSales() {
                 </div>
             </div>
             <div className='v-after-sales__section-call-center'>
-                <ReactSVG src={LogoWhite} className='v-after-sales__section-call-center__logo'/>
+                {/* <ReactSVG src={LogoWhite} className='v-after-sales__section-call-center__logo'/>
                 <h2 className='v-after-sales__section-call-center__title'>CALL CENTER</h2>
                 <div className='v-after-sales__section-call-center__text-group'>
                     <p className='v-after-sales__section-call-center__text'>¿Alguna duda?</p>
                     <p className='v-after-sales__section-call-center__text'>¿Desea asesoría o gestionar una cita online?</p>
                     <p className='v-after-sales__section-call-center__text'>¡No dude en llamarnos!</p>
                 </div>
-                <p className='v-after-sales__section-call-center__number'>809-889-9087</p>
+                <p className='v-after-sales__section-call-center__number'>809-889-9087</p> */}
+                <Link to={"/contacto"} className='v-after-sales__section-call-center__button'>Contáctanos</Link>
             </div>
             <a href="https://api.whatsapp.com/send/?phone=18098899087" className='v-after-sales__whatsapp-icon__container'>
                 <img src={WhatsAppIcon} className='v-after-sales__whatsapp-icon' alt="whatsapp" />

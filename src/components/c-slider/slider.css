@@ -7,7 +7,8 @@
     align-items: center;
 }
 .c-slider__title{
-    font-size: 32px;
+    font-family: jetourFontRegular;
+    font-size: 42px;
     margin-top: 80px;
 }
 .c-slider__carousel-container{
@@ -85,6 +86,7 @@
     }
     .c-slider__title{
         font-size: 32px;
+        text-align: center;
         margin-top: 40px;
     }
     .c-slider__carousel-image-left{

@@ -10,7 +10,7 @@ import CSlider from '../../../components/c-slider/c-slider'
 import CAccordion from '../../../components/c-accordion/c-accordion'
 
 import Banner from '../../../assets/dashing1.jpg'
-import LogoDashing from '../../../assets/dashing-1.png'
+// import LogoDashing from '../../../assets/dashing-1.png'
 import DashingBlack from '../../../assets/dashing-black.png'
 import DashingGray from '../../../assets/dashing-gray.png'
 import DashingRed from '../../../assets/dashing-red.png'
@@ -30,10 +30,10 @@ export default function VDashing() {
             <CHeader />
             <div className='v-dashing__banner'>
                  <img src={Banner} alt="" className='v-dashing__banner__image'/>
-                 <ReactPlayer url={DashingVideo} width='100%' height='1080px' loop playing muted className='v-dashing__banner__video'/>
+                 <ReactPlayer url={DashingVideo} width='100%' height='auto' loop playing muted className='v-dashing__banner__video'/>
             </div>
             <div className='v-dashing__content-nav'>
-                <img src={LogoDashing} alt="" className='v-dashing__model-nav__logo'/>
+                {/* <img src={LogoDashing} alt="" className='v-dashing__model-nav__logo'/> */}
                 <div className='v-dashing__model-nav__actions'>
                     <div className='v-dashing__model-nav__nav-items'>
                         <a href="#overview"  className='v-dashing__model-nav__nav-item'>Visión general</a>
@@ -159,7 +159,7 @@ export default function VDashing() {
                 <div className='v-dashing__section__design__info-container no-show-mobile'>
                     <div className='v-dashing__section__design__group-c'></div>
                     <div className='v-dashing__section__design__text-group'>
-                        <p className='v-dashing__section__design__text'>El Detour Dashing tiene un aspecto nítido traducido en su estilo aerodinámico y apariencia contemporánea.</p>
+                        <p className='v-dashing__section__design__text'>La pantalla táctil inteligente de 15,6 pulgadas integra todas las funciones en una interfaz clara y fácil de usar.</p>
                     </div>
                 </div>
             </div>
@@ -193,7 +193,7 @@ export default function VDashing() {
                 <div className='v-dashing__section__design__info-container no-show-mobile'>
                     <div className='v-dashing__section__design__group-d'></div>
                     <div className='v-dashing__section__design__text-group'>
-                        <p className='v-dashing__section__design__text'>El Detour Dashing tiene un aspecto nítido traducido en su estilo aerodinámico y apariencia contemporánea.</p>
+                        <p className='v-dashing__section__design__text'>El Jetour Dashing tiene un aspecto nítido traducido en su estilo aerodinámico y apariencia contemporánea.</p>
                     </div>
                 </div>
                 <div className='v-dashing__section__design__info-container'>

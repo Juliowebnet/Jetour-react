@@ -9,15 +9,12 @@ import CSlider from '../../../components/c-slider/c-slider'
 import CAccordion from '../../../components/c-accordion/c-accordion'
 
 import Banner from '../../../assets/x70-1536x864.jpg'
-import LogoX70 from '../../../assets/X70-1.png'
+// import LogoX70 from '../../../assets/X70-1.png'
 import X70Red from '../../../assets/x70-red.png'
 import X70Blue from '../../../assets/x70-blue.png'
 import X70Brown from '../../../assets/x70-brown.png'
 import X70White from '../../../assets/x70-white.png'
-import Security1 from '../../../assets/security-1.png'
-import Security2 from '../../../assets/security-2.png'
-import Security3 from '../../../assets/security-3.png'
-import Security4 from '../../../assets/security-4.png'
+
 
 export default function VX70() {
     const [color, setColor] = useState('red')
@@ -28,7 +25,7 @@ export default function VX70() {
                  <img src={Banner} alt="" className='v-x70__banner__image'/>
             </div>
             <div className='v-x70__content-nav'>
-                <img src={LogoX70} alt="" className='v-x70__model-nav__logo'/>
+                {/* <img src={LogoX70} alt="" className='v-x70__model-nav__logo'/> */}
                 <div className='v-x70__model-nav__actions'>
                     <div className='v-x70__model-nav__nav-items'>
                         <a href="#overview"  className='v-x70__model-nav__nav-item'>Visión general</a>
@@ -150,29 +147,6 @@ export default function VX70() {
             </div>
             <div className='v-x70__section-slider' id="gallery">
                 <CSlider title="GALERÍA INTERIOR" data={data.slider1}/>
-            </div>
-            <div className='v-x70__section-security'>
-                <div className='v-x70__section-security__content-group'>
-                    <h2 className='v-x70__section-security__content-group__title'>SEGURIDAD</h2>
-                    <div className='v-x70__section-security__content-group__items'>
-                        <div className='v-x70__section-security__content-group__item'>
-                            <img src={Security1} alt="" className='v-x70__section-security__content-group__item__image'/>
-                            <p className='v-x70__section-security__content-group__item__text'>540° panoramic parking assist system</p>
-                        </div>
-                        <div className='v-x70__section-security__content-group__item'>
-                            <img src={Security2} alt="" className='v-x70__section-security__content-group__item__image'/>
-                            <p className='v-x70__section-security__content-group__item__text'>LDWS (Lane Departure Warning System)</p>
-                        </div>
-                        <div className='v-x70__section-security__content-group__item'>
-                            <img src={Security3} alt="" className='v-x70__section-security__content-group__item__image'/>
-                            <p className='v-x70__section-security__content-group__item__text'>Automatic emergency braking system</p>
-                        </div>
-                        <div className='v-x70__section-security__content-group__item'>
-                            <img src={Security4} alt="" className='v-x70__section-security__content-group__item__image'/>
-                            <p className='v-x70__section-security__content-group__item__text'>RCTA (Rear Side Collision Alert)</p>
-                        </div>
-                    </div>
-                </div>
             </div>
             <div className='v-x70__section-slider'>
                 <CSlider title="GALERÍA EXTERIOR" data={data.slider2} controlColor="black"/>

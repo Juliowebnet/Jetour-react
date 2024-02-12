@@ -16,6 +16,7 @@
     padding: 0 30px;
 }
 .c-news-card__title{
+    font-family: poppinsBold;
     margin-bottom: 20px;
 }
 .c-news-card__footer{
@@ -30,11 +31,23 @@
     color: #BBBBBB;
     font-weight: 900;
 }
+.c-news-card__footer__arrow-group{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.c-news-card__footer__arrow-line{
+    width: 30px;
+    height: 1.8px;
+    background-color: #53B1CB;
+    position: relative;
+    right: -9px;
+}
 .c-news-card__footer__arrow{
-    width: 10px;
-    height: 10px;
-    border-top: solid 2px #DB8D66;
-    border-right: solid 2px #DB8D66;
+    width: 7px;
+    height: 7px;
+    border-top: solid 2px #53B1CB;
+    border-right: solid 2px #53B1CB;
     transform: rotate(45deg);
 }
 

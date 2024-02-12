@@ -11,7 +11,8 @@ export default function CNewsCard(props) {
                 <p className='c-news-card__text'>{props.text}</p>
                 <div className='c-news-card__footer'>
                     <p className='c-news-card__footer__date'>{props.date}</p>
-                    <Link to={'/'} className='c-news-card__footer__arrow-group'>
+                    <Link to={props.url} className='c-news-card__footer__arrow-group'>
+                        <div className='c-news-card__footer__arrow-line'></div>
                         <div className='c-news-card__footer__arrow'></div>
                     </Link>
                 </div>

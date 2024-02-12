@@ -71,7 +71,7 @@ export default function VContact() {
             </div>
             <div className='v-contact__section'>
                 <div className='v-contact__section__container'>
-                    <h1 className='v-contact__section__title'>Contact Us</h1>
+                    <h1 className='v-contact__section__title'>CONTÁCTANOS</h1>
                     <h3 className='v-contact__section__subtitle'>Atención personalizada</h3>
                     <p className='v-contact__section__text'>Puedes obtener asistencia personalizada en alguna de nuestras concesionarias oficiales en todo el país</p>
                     <h3 className='v-contact__section__subtitle'>Email</h3>

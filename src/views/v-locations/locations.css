@@ -12,13 +12,14 @@
     margin-bottom: 50px;
 }
 .v-locations__title{
-  font-size: 48px;
+    font-family: jetourFontSemiBold;
+  font-size: 40px;
   color: #333333;
   font-weight: 900;
 }
 .v-locations__subtitle{
     font-size: 30px;
-    color: #DB8D66;
+    color: #61B6CD;
     font-weight: 400;
 }
 .v-locations__map-container{
@@ -34,16 +35,20 @@
 
 @media (max-width: 1200px) {
     .v-locations__title{
-        font-size: 44px;
+        font-size: 35px;
         text-align: center;
       }
 }
 @media (max-width: 900px) {
     .v-locations__title{
-        font-size: 40px;
+        font-size: 25px;
         text-align: center;
+        padding: 0 20px;
       }
     .v-locations__subtitle{
         font-size: 22px;
+    }
+    .v-locations__map{
+        width: 90%;
     }
 }

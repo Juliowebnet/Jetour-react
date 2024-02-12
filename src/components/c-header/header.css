@@ -11,7 +11,7 @@
     color: #fff;
 }
 .c-header__logo{
-    width: 283px;
+    width: 200px;
     margin-left: 50px;
 }
 .c-header__nav__desktop{
@@ -50,10 +50,10 @@
    color: #fff;
 }
 .c-header__nav__item:hover{
-   color: #db8d66;
+   color: #5AB4CC;
 }
 .c-header__nav__item.active{
-   color: #db8d66;
+   color: #5AB4CC;
 }
 .c-header__nav__submenu{
     width: 200px;

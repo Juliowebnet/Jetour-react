@@ -11,7 +11,7 @@
     height: 62px;
     background-color: #333333;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
     color: #fff;
 }
@@ -33,7 +33,7 @@
 }
 .v-x70__model-nav__nav-item-3d{
     text-decoration: none;
-    color: #DD8F67;
+    color: #5AB4CC;
 }
 .v-x70__model-nav__nav-item{
     text-decoration: none;
@@ -79,7 +79,8 @@
     color: #030303;
 }
 .v-x70__section__overview__detail{
-    font-size: 100px;
+    font-family: jetourFontRegular;
+    font-size: 60px;
     font-weight: 900;
     color: #030303;
 }
@@ -131,7 +132,9 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-end;
+    padding-right: 30px;
+    margin-left: 50px;
 }
 .v-x70__section__overview__background-red{
     background: transparent linear-gradient(145deg, #B22323 0%, #888686 100%) 0% 0% no-repeat padding-box;
@@ -151,7 +154,8 @@
     align-items: center;
 }
 .v-x70__section__overview__background__title{
-    font-size: 70px;
+    font-family: jetourFontRegular;
+    font-size: 50px;
     color: #fff;
 }
 .v-x70__section__overview__background__text{
@@ -192,7 +196,8 @@
 }
 .v-x70__section__design__title{
     text-align: center;
-    font-size: 32px;
+    font-family: jetourFontBold;
+    font-size: 22px;
 }
 .v-x70__section__design__group-a{
     width: 360px;
@@ -311,12 +316,11 @@
     }
 }
 @media (max-width: 900px) {
-    .v-x70__model-nav__actions{
+    .v-x70__content-nav{
         display: none;
     }
     .v-x70__section__overview{
         width: 100%;
-        height: 800px;
         overflow: hidden;
         display: flex;
         justify-content: center;
@@ -347,7 +351,7 @@
         color: #fff;
     }
     .v-x70__section__overview__detail{
-        font-size: 50px;
+        font-size: 30px;
         color: #fff;
     }
     .text-black{
@@ -365,7 +369,7 @@
         align-items: center;
         z-index: 9999;
         padding: 10px 20px;
-        margin-top: 100px;
+        margin-top: 150px;
     }
     .v-x70__section__overview__colors{
         justify-content: center;
@@ -382,10 +386,7 @@
         height: 100%;
         border-top-left-radius: 0px;
         border-top-right-radius: 0px;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
+        margin: 0;
     }
     .v-x70__section__overview__background__title-group{
         padding-top: 20px;
@@ -403,9 +404,10 @@
         height: 300px;
     }
     .v-x70__section__design__info-container{
-        width: 200px;
+        width: 80%;
         display: flex;
         flex-direction: column;
+        align-items: center;
         gap: 20px;
     }
     .v-x70__section__design__group-a, .v-x70__section__design__group-b, .v-x70__section__design__group-c, .v-x70__section__design__group-d, .v-x70__section__design__group-e, .v-x70__section__design__group-f{
@@ -440,7 +442,7 @@
         color: #fff;
     }
     .v-x70__section__overview__detail{
-        font-size: 50px;
+        font-size: 30px;
         color: #fff;
     }
     .text-black{
@@ -458,7 +460,7 @@
         align-items: center;
         z-index: 9999;
         padding: 10px 20px;
-        margin-top: 200px;
+        margin-top: 250px;
     }
     .v-x70__section__overview__colors{
         justify-content: center;
@@ -475,10 +477,6 @@
         height: 100%;
         border-top-left-radius: 0px;
         border-top-right-radius: 0px;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
     }
     .v-x70__section__overview__background__title-group{
         padding-top: 20px;
@@ -490,7 +488,7 @@
         position: absolute;
         left: -60px;
         overflow: hidden;
-        margin-top: 360px;
+        margin-top: 340px;
     }
     .v-x70__section__overview__image-container img{
         height: 250px;

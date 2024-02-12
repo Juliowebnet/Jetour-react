@@ -1,9 +1,39 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100:300;400;500;700;900&display=swap');
+@font-face {
+    font-family: jetourFont;
+    src: url(./assets/fonts/Jetour/FMBolyarSansPro-200.woff);
+}
+@font-face {
+    font-family: jetourFontRegular;
+    src: url(./assets/fonts/Jetour/FMBolyarSansPro-400.ttf);
+}
+@font-face {
+    font-family: jetourFontSemiBold;
+    src: url(./assets/fonts/Jetour/FMBolyarSansPro-500.ttf);
+}
+@font-face {
+    font-family: jetourFont600;
+    src: url(./assets/fonts/Jetour/FMBolyarSansPro-600.ttf);
+}
+@font-face {
+    font-family: jetourFontBold;
+    src: url(./assets/fonts/Jetour/FMBolyarSansPro-700.ttf);
+}
+@font-face {
+    font-family: poppins;
+    src: url(./assets/fonts/Poppins/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: poppinsBold;
+    src: url(./assets/fonts/Poppins/Poppins-Bold.ttf);
+}
 
 
 *{
-    font-family: 'Roboto', sans-serif;
+    font-family: poppins;
     margin: 0;
     padding: 0;
     color: #333333;
 }
+a{
+    text-decoration: none;
+  }

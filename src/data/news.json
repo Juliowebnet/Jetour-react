@@ -1,0 +1,39 @@
+{
+    "news": [
+        {
+            "id": 0,
+            "thumbnail": "",
+            "title": "",
+            "sub_title": "",
+            "date": ""
+        },
+        {
+            "id": 1,
+            "thumbnail": "",
+            "title": "",
+            "sub_title": "",
+            "date": ""
+        },
+        {
+            "id": 2,
+            "thumbnail": "",
+            "title": "",
+            "sub_title": "",
+            "date": ""
+        },
+        {
+            "id": 3,
+            "thumbnail": "",
+            "title": "",
+            "sub_title": "",
+            "date": ""
+        },
+        {
+            "id": 4,
+            "thumbnail": "",
+            "title": "",
+            "sub_title": "",
+            "date": ""
+        }
+    ]
+}

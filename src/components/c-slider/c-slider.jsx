@@ -33,8 +33,8 @@ export default function CSlider (props) {
                             {props.controlColor === "black" ? <ReactSVG src={ArrowRightBlack} className='c-slider__carousel__arrow-control'/> : <ReactSVG src={ArrowRight} className='c-slider__carousel__arrow-control'/>}
                         </div>
                         <div className='c-slider__carousel-controls__dots'>
-                            {props.data.map((img) => {
-                            return img.id === imgActive ? <div className='c-slider__carousel-controls__dot__active'></div> : <div className='c-slider__carousel-controls__dot'></div>
+                            {props.data.map((img , i) => {
+                            return img.id === imgActive ? <div className='c-slider__carousel-controls__dot__active' key={i}></div> : <div className='c-slider__carousel-controls__dot' key={i}></div>
                             })}
                         </div>
                     </div>

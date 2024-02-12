@@ -4,7 +4,7 @@ import './locations.css'
 import CHeader from '../../components/c-header/c-header'
 import CFooter from '../../components/c-footer/c-footer'
 
-import Banner from '../../assets/Mask-Group-15.png'
+import Banner from '../../assets/concesionarios-banner.png'
 
 // const AnyReactComponent = ({ text }) => <div>{text}</div>;
 
@@ -27,7 +27,7 @@ export default function VLocations() {
                 <p className="v-locations__subtitle">ENCUENTRA EL MÁS CERCANO</p>
             </div>
             <div className="v-locations__map-container">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d39394.467787541435!2d-69.96246588925725!3d18.48247000596633!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8eaf899c9881cd0b%3A0x69aee0aceee46bea!2sJetour%20Rep%C3%BAblica%20Domincana!5e0!3m2!1sen!2sdo!4v1696238676165!5m2!1sen!2sdo" className="v-locations__map" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="mapa"/>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d39394.467787541435!2d-69.96246588925725!3d18.48247000596633!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8eaf899c9881cd0b%3A0x69aee0aceee46bea!2sJetour%20Rep%C3%BAblica%20Domincana!5e0!3m2!1sen!2sdo!4v1696238676165!5m2!1sen!2sdo" className="v-locations__map" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade" title="mapa"/>
             </div>
             {/* <div className="v-locations__map-container">
                 <div style={{ height: '600px', width: '70%' }}>

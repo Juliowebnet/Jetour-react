@@ -9,7 +9,7 @@
     height: 62px;
     background-color: #333333;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
     color: #fff;
 }
@@ -30,7 +30,7 @@
 }
 .v-dashing__model-nav__nav-item-3d{
     text-decoration: none;
-    color: #DD8F67;
+    color: #5AB4CC;
 }
 .v-dashing__model-nav__nav-item{
     text-decoration: none;
@@ -76,7 +76,8 @@
     color: #030303;
 }
 .v-dashing__section__overview__detail{
-    font-size: 100px;
+    font-family: jetourFontRegular;
+    font-size: 60px;
     font-weight: 900;
     color: #030303;
 }
@@ -131,7 +132,9 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-end;
+    padding-right: 30px;
+    margin-left: 50px;
 }
 .v-dashing__section__overview__background-balck{
     background: transparent linear-gradient(145deg, #030303 0%, #888686 100%) 0% 0% no-repeat padding-box;
@@ -154,7 +157,8 @@
     align-items: center;
 }
 .v-dashing__section__overview__background__title{
-    font-size: 70px;
+    font-family: jetourFontRegular;
+    font-size: 50px;
     color: #fff;
 }
 .v-dashing__section__overview__background__text{
@@ -195,7 +199,8 @@
 }
 .v-dashing__section__design__title{
     text-align: center;
-    font-size: 32px;
+    font-family: jetourFontBold;
+    font-size: 22px;
 }
 .v-dashing__section__design__group-a{
     width: 360px;
@@ -258,7 +263,8 @@
 }
 .v-dashing__section-security__content-group__title{
    color: #fff;
-   font-size: 32px;
+   font-family: jetourFontRegular;
+   font-size: 40px;
 }
 .v-dashing__section-security__content-group__items{
     width: 100%;
@@ -282,22 +288,26 @@
 }
 
 @media (min-width: 1930px) {
-    .v-dashing__banner__video{
+    /* .v-dashing__banner__video{
         display: none;
     }
     .v-dashing__banner__image{
         width: 100%;
         display: block;
-    }
+    } */
 }
 @media (max-width: 1900px) {
-    .v-dashing__banner__video{
+    /* .v-dashing__banner__video{
         display: none;
     }
     .v-dashing__banner__image{
         width: 100%;
         display: block;
-    }
+    } */
+    /* .v-dashing__section__overview__image-container{
+        left: 190px;
+        margin-top: 230px;
+    } */
 }
 @media (max-width: 1700px) {
     .v-dashing__section__overview__image-container{
@@ -333,12 +343,11 @@
     }
 }
 @media (max-width: 900px) {
-    .v-dashing__model-nav__actions{
+    .v-dashing__content-nav{
         display: none;
     }
     .v-dashing__section__overview{
         width: 100%;
-        height: 800px;
         overflow: hidden;
         display: flex;
         justify-content: center;
@@ -369,7 +378,7 @@
         color: #fff;
     }
     .v-dashing__section__overview__detail{
-        font-size: 50px;
+        font-size: 30px;
         color: #fff;
     }
     .text-black{
@@ -404,10 +413,7 @@
         height: 100%;
         border-top-left-radius: 0px;
         border-top-right-radius: 0px;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
+        margin: 0px;
     }
     .v-dashing__section__overview__background__title-group{
         padding-top: 20px;
@@ -425,9 +431,9 @@
         height: 400px;
     }
     .v-dashing__section__design__info-container{
-        width: 200px;
         display: flex;
         flex-direction: column;
+        align-items: center;
         gap: 20px;
     }
     .v-dashing__section__design__group-a, .v-dashing__section__design__group-b, .v-dashing__section__design__group-c, .v-dashing__section__design__group-d, .v-dashing__section__design__group-e, .v-dashing__section__design__group-f{
@@ -440,6 +446,9 @@
     .v-dashing__section__design__title{
         text-align: center;
         font-size: 24px;
+    }
+    .v-dashing__section-security__content-group__title{
+        font-size: 30px;
     }
 }
 @media (max-width: 600px) {
@@ -462,7 +471,7 @@
         color: #fff;
     }
     .v-dashing__section__overview__detail{
-        font-size: 50px;
+        font-size: 30px;
         color: #fff;
     }
     .text-black{
@@ -480,7 +489,7 @@
         align-items: center;
         z-index: 9999;
         padding: 10px 20px;
-        margin-top: 200px;
+        margin-top: 250px;
     }
     .v-dashing__section__overview__colors{
         justify-content: center;
@@ -498,19 +507,19 @@
         border-top-left-radius: 0px;
         border-top-right-radius: 0px;
         display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
     }
     .v-dashing__section__overview__background__title-group{
         padding-top: 20px;
         display: flex;
         align-items: center;
     }
+    .v-dashing__section__overview__background__title{
+  font-size: 40px;
+    }
     .v-dashing__section__overview__image-container{
         width: 530px;
         position: absolute;
-        left: -140px;
+        left: -150px;
         overflow: hidden;
         margin-top: 260px;
     }
