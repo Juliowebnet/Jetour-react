@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { HashRouter, Route, Routes } from "react-router-dom";
 
 import VHome from "./views/v-home/v-home";
 import VDashing from "./views/models/dashing/v-dashing";
@@ -19,7 +19,7 @@ import VQuotation from "./views/v-quotation/v-quotation";
 
 const Routers = () => {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route path="/" element={<VHome />} />
         <Route path="/modelos/dashing" element={<VDashing />} />
@@ -53,7 +53,7 @@ const Routers = () => {
         <Route path="/contacto" element={<VContact />} />
         <Route path="/cotizar/:model" element={<VQuotation />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 };
 

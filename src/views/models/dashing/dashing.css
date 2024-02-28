@@ -1,8 +1,22 @@
 .v-dashing__banner{
     width: 100%;
+    position: relative;
 }
 .v-dashing__banner__image{
-    display: none;
+    width: 100%;
+    display: block;
+}
+.v-dashing__banner__text-container{
+    width: 100%;
+    height: 166px;
+    position: absolute;
+    left: 130px;
+    bottom: 0px;
+}
+.v-dashing__banner__text{
+    font-family: jetourFontRegular;
+    font-size: 50px;
+    color: white;
 }
 .v-dashing__content-nav{
     width: 100%;
@@ -322,6 +336,12 @@
     }
 }
 @media (max-width: 1200px) {
+    .v-dashing__banner__text-container{
+        bottom: -60px;
+    }
+    .v-dashing__banner__text{
+        font-size: 30px;
+    }
     .v-dashing__section__overview__image-container{
         width: 930px;
         overflow: hidden;
@@ -451,7 +471,15 @@
         font-size: 30px;
     }
 }
+@media (max-width: 750px) {
+    .v-dashing__banner__text-container{
+        bottom: -90px;
+    }
+}
 @media (max-width: 600px) {
+    .v-dashing__banner__text-container{
+        display: none;
+    }
     .v-dashing__section__overview{
         width: 100%;
         overflow: hidden;

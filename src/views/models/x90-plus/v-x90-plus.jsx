@@ -8,7 +8,7 @@ import CFooter from '../../../components/c-footer/c-footer'
 import CSlider from '../../../components/c-slider/c-slider'
 import CAccordion from '../../../components/c-accordion/c-accordion'
 
-import Banner from '../../../assets/x90plus.jpg'
+// import Banner from '../../../assets/x90plus.jpg'
 // import LogoX90Plus from '../../../assets/X90Plus-logo.png'
 import X90PlusBlack from '../../../assets/x90-plus-black.png'
 import X90PlusGray from '../../../assets/x90-plus-grey.png'
@@ -22,7 +22,10 @@ export default function VX90Plus() {
         <div className='v-x90-plus'>
             <CHeader />
             <div className='v-x90-plus__banner'>
-                 <img src={Banner} alt="" className='v-x90-plus__banner__image'/>
+                 <img src={process.env.PUBLIC_URL + "/Images/x90PLus-exterior6.jpg"} alt="" className='v-x90-plus__banner__image'/>
+                 <div className='v-x90-plus__banner__text-container'>
+                    <p className='v-x90-plus__banner__text'>X70 PLUS</p>
+                 </div>
             </div>
             <div className='v-x90-plus__content-nav'>
                 {/* <img src={LogoX90Plus} alt="" className='v-x90-plus__model-nav__logo'/> */}

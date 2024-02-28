@@ -9,7 +9,7 @@ import CFooter from '../../../components/c-footer/c-footer'
 import CSlider from '../../../components/c-slider/c-slider'
 import CAccordion from '../../../components/c-accordion/c-accordion'
 
-import Banner from '../../../assets/x70-plus.jpeg'
+// import Banner from '../../../assets/x70-plus.jpeg'
 // import LogoX70Plus from '../../../assets/X70Plus-1.png'
 import X70PLusBlack from '../../../assets/x70-plus-black.png'
 import X70PLusGray from '../../../assets/x70-plus-gray.png'
@@ -24,7 +24,10 @@ export default function VX70Plus() {
         <div className='v-x70-plus'>
             <CHeader />
             <div className='v-x70-plus__banner'>
-                 <img src={Banner} alt="" className='v-x70-plus__banner__image'/>
+                 <img src={process.env.PUBLIC_URL + "/Images/x70PLus-exterior6.jpg"} alt="" className='v-x70-plus__banner__image'/>
+                 <div className='v-x70-plus__banner__text-container'>
+                    <p className='v-x70-plus__banner__text'>X70 PLUS</p>
+                 </div>
             </div>
             <div className='v-x70-plus__content-nav'>
                 {/* <img src={LogoX70Plus} alt="" className='v-x70-plus__model-nav__logo'/> */}

@@ -8,7 +8,7 @@ import CFooter from '../../../components/c-footer/c-footer'
 import CSlider from '../../../components/c-slider/c-slider'
 import CAccordion from '../../../components/c-accordion/c-accordion'
 
-import Banner from '../../../assets/x70-1536x864.jpg'
+// import Banner from '../../../assets/x70-1536x864.jpg'
 // import LogoX70 from '../../../assets/X70-1.png'
 import X70Red from '../../../assets/x70-red.png'
 import X70Blue from '../../../assets/x70-blue.png'
@@ -20,9 +20,14 @@ export default function VX70() {
     const [color, setColor] = useState('red')
     return (
         <div className='v-x70'>
-            <CHeader />
+            <div className='v-x70__header'>
+                <CHeader />
+            </div>
             <div className='v-x70__banner'>
-                 <img src={Banner} alt="" className='v-x70__banner__image'/>
+                 <img src={process.env.PUBLIC_URL + "/Images/x70-exterior1.jpg"} alt="" className='v-x70__banner__image'/>
+                 <div className='v-x70__banner__text-container'>
+                    <p className='v-x70__banner__text'>X70</p>
+                 </div>
             </div>
             <div className='v-x70__content-nav'>
                 {/* <img src={LogoX70} alt="" className='v-x70__model-nav__logo'/> */}

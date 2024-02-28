@@ -5,6 +5,10 @@ import './after-sales.css'
 import CHeader from '../../components/c-header/c-header'
 import CFooter from '../../components/c-footer/c-footer'
 
+import ServiceImg01 from '../../assets/pdi-image.png'
+import ServiceImg02 from '../../assets/colisiones-image.png'
+import ServiceImg03 from '../../assets/Preventivo-image.png'
+import ServiceImg04 from '../../assets/correctivo-image.png'
 import Service1 from '../../assets/pdi-icon.svg'
 import Service2 from '../../assets/colisiones-icon.svg'
 import Service3 from '../../assets/preventivo-icon.svg'
@@ -25,40 +29,52 @@ export default function VAfterSales() {
                 {/* <p className='v-after-sales__section-services__subtitle'>SEGURIDAD Y CALIDAD</p> */}
                 <div className='v-after-sales__section-services__items'>
                     <div className='v-after-sales__section-services__item'>
-                        <ReactSVG src={Service1} className='v-after-sales__section-services__item__image'/>
+                        <img src={ServiceImg01} alt="pdi" className='v-after-sales__section-services__item__image'/>
                         <h3 className='v-after-sales__section-services__item__title'>PDI</h3>
                         <ul className='v-after-sales__section-services__item__list'>
                             <li className='v-after-sales__section-services__item__list-text'>Inspección pre-entrega</li>
                             <li className='v-after-sales__section-services__item__list-text'>Revisión técnica y cualitativa.</li>
                             <li className='v-after-sales__section-services__item__list-text'>Total garantía de funcionamiento</li>
                         </ul>
+                        <div className='v-after-sales__section-services__item__icon-container'>
+                            <ReactSVG src={Service1} className='v-after-sales__section-services__item__icon'/>
+                        </div>
                     </div>
                     <div className='v-after-sales__section-services__item'>
-                        <ReactSVG src={Service2} className='v-after-sales__section-services__item__image'/> 
+                        <img src={ServiceImg02} alt="colisiones" className='v-after-sales__section-services__item__image'/>
                         <h3 className='v-after-sales__section-services__item__title'>SERVICIO DE COLISIONES</h3>
                         <ul className='v-after-sales__section-services__item__list'>
                             <li className='v-after-sales__section-services__item__list-text'>Inspección pre-entrega</li>
                             <li className='v-after-sales__section-services__item__list-text'>Revisión técnica y cualitativa.</li>
                             <li className='v-after-sales__section-services__item__list-text'>Total garantía de funcionamiento</li>
                         </ul>
+                        <div className='v-after-sales__section-services__item__icon-container'>
+                            <ReactSVG src={Service2} className='v-after-sales__section-services__item__icon'/>
+                        </div>
                     </div>
                     <div className='v-after-sales__section-services__item'>
-                        <ReactSVG src={Service3} className='v-after-sales__section-services__item__image'/>
+                        <img src={ServiceImg03} alt="mantenimiento-preventivo" className='v-after-sales__section-services__item__image'/>
                         <h3 className='v-after-sales__section-services__item__title'>MANTENIMIENTO PREVENTIVO</h3>
                         <ul className='v-after-sales__section-services__item__list'>
                             <li className='v-after-sales__section-services__item__list-text'>Inspección pre-entrega</li>
                             <li className='v-after-sales__section-services__item__list-text'>Revisión técnica y cualitativa.</li>
                             <li className='v-after-sales__section-services__item__list-text'>Total garantía de funcionamiento</li>
                         </ul>
+                        <div className='v-after-sales__section-services__item__icon-container'>
+                            <ReactSVG src={Service3} className='v-after-sales__section-services__item__icon'/>
+                        </div>
                     </div>
                     <div className='v-after-sales__section-services__item '>
-                        <ReactSVG src={Service4} className='v-after-sales__section-services__item__image'/>
+                        <img src={ServiceImg04} alt="mantenimiento-correctivo" className='v-after-sales__section-services__item__image'/>
                         <h3 className='v-after-sales__section-services__item__title'>MANTENIMIENTO CORRECTIVO</h3>
                         <ul className='v-after-sales__section-services__item__list'>
                             <li className='v-after-sales__section-services__item__list-text'>Inspección pre-entrega</li>
                             <li className='v-after-sales__section-services__item__list-text'>Revisión técnica y cualitativa.</li>
                             <li className='v-after-sales__section-services__item__list-text'>Total garantía de funcionamiento</li>
                         </ul>
+                        <div className='v-after-sales__section-services__item__icon-container'>
+                            <ReactSVG src={Service4} className='v-after-sales__section-services__item__icon'/>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
-import ReactPlayer from 'react-player'
+// import ReactPlayer from 'react-player'
 
 import './dashing.css'
 import data from '../../../data/dashing.json'
@@ -9,7 +9,7 @@ import CFooter from '../../../components/c-footer/c-footer'
 import CSlider from '../../../components/c-slider/c-slider'
 import CAccordion from '../../../components/c-accordion/c-accordion'
 
-import Banner from '../../../assets/dashing1.jpg'
+// import Banner from '../../../assets/JETOUR_JX65_cam012_grey-min-1-2.png'
 // import LogoDashing from '../../../assets/dashing-1.png'
 import DashingBlack from '../../../assets/dashing-black.png'
 import DashingGray from '../../../assets/dashing-gray.png'
@@ -21,7 +21,7 @@ import Security2 from '../../../assets/security-2.png'
 import Security3 from '../../../assets/security-3.png'
 import Security4 from '../../../assets/security-4.png'
 
-import DashingVideo from '../../../assets/videos/dashing.mp4'
+// import DashingVideo from '../../../assets/videos/dashing.mp4'
 
 export default function VDashing() {
     const [color, setColor] = useState('black')
@@ -29,8 +29,11 @@ export default function VDashing() {
         <div className='v-dashing'>
             <CHeader />
             <div className='v-dashing__banner'>
-                 <img src={Banner} alt="" className='v-dashing__banner__image'/>
-                 <ReactPlayer url={DashingVideo} width='100%' height='auto' loop playing muted className='v-dashing__banner__video'/>
+                 <img src={process.env.PUBLIC_URL + "/Images/dashing-exterior4.jpg"} alt="" className='v-dashing__banner__image'/>
+                 <div className='v-dashing__banner__text-container'>
+                    <p className='v-dashing__banner__text'>DASHING</p>
+                 </div>
+                 {/* <ReactPlayer url={DashingVideo} width='100%' height='auto' loop playing muted className='v-dashing__banner__video'/> */}
             </div>
             <div className='v-dashing__content-nav'>
                 {/* <img src={LogoDashing} alt="" className='v-dashing__model-nav__logo'/> */}
